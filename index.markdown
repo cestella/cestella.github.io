@@ -16,7 +16,7 @@ on the Internet.
 [![Feed icon](/files/css/feed-icon-14x14.png){:title="Atom feed of recent posts" .right}][feed]
 A [feed][] of the most recent posts is available.
 
-[feed]: /blog/atom.xml
+[feed]: atom.xml
 
 Recent Posts
 ------------

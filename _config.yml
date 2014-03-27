@@ -1,5 +1,4 @@
 ---
-destination : ../caseystella.com
 auto        : false
 lsi         : false
 pygments    : true

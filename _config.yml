@@ -1,8 +1,9 @@
 ---
-auto        : false
+auto        : true
 lsi         : false
 pygments    : true
 permalink   : none
+server      : true
 markdown    : maruku
 
 maruku:

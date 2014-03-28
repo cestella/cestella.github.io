@@ -21,7 +21,7 @@ A [feed][] of the most recent posts is available.
 Recent Posts
 ------------
 
-{% for post in site.categories limit:5 %}
+{% for cat in site.categories limit:5 %}
 <li>{{ cat[0] }}</li>
 {% endfor %}
 {% for post in site.categories.blog limit:5 %}

@@ -5,8 +5,8 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Structure &amp; Process</title>
- <link href="http://www.caseystella.com/blog/atom.xml" rel="self"/>
- <link href="http://www.caseystella.com/blog/"/>
+ <link href="http://blog.caseystella.com/atom.xml" rel="self"/>
+ <link href="http://blog.caseystella.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://blog.caseystella.com</id>
  <author>
@@ -16,7 +16,7 @@ layout: nil
  {% for post in site.posts limit:5 %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://www.caseystella.com{{ post.url }}"/>
+   <link href="http://blog.caseystella.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>id:{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>

@@ -4,7 +4,7 @@ lsi         : false
 pygments    : true
 permalink   : none
 server      : true
-markdown    : maruku
+markdown    : kramdown
 
 maruku:
     use_divs: true

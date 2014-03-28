@@ -28,3 +28,7 @@ to do some textual analysis of Wikileaks data.
 
 If I can do half of that in a year, I'll be overjoyed.  Anyway,
 I hope you enjoy the posts.
+
+Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is
+a block rendering: 
+\\[ \frac{1}{n^{2}} \\]

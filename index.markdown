@@ -22,6 +22,9 @@ Recent Posts
 ------------
 
 {% for post in site.categories limit:5 %}
+<li>{{ cat[0] }}</li>
+{% endfor %}
+{% for post in site.categories.blog limit:5 %}
 <div class="section list">
   <h1>{{ post.date | date_to_string }}</h1>
   <p class="line">

@@ -10,10 +10,10 @@ keywords: Blog, Research, Software, Programming
 Archives
 ========
 
-This is the complete archive of posts from my _[technical blog](/blog)_
+This is the complete archive of posts from my _[technical blog](http://blog.caseystella.com)_
 in reverse chronological order.
 
-{% for post in site.categories.blog %}
+{% for post in site.posts %}
 <div class="section list">
   <h1>{{ post.date | date_to_string }}</h1>
   <p class="line">

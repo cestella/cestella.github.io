@@ -8,12 +8,12 @@ layout: nil
  <link href="http://www.caseystella.com/blog/atom.xml" rel="self"/>
  <link href="http://www.caseystella.com/blog/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://www.caseystella.com/blog/</id>
+ <id>http://blog.caseystella.com</id>
  <author>
    <name>Casey Stella</name>
  </author>
  
- {% for post in site.categories.blog limit:5 %}
+ {% for post in site.posts limit:5 %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="http://www.caseystella.com{{ post.url }}"/>

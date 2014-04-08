@@ -572,7 +572,8 @@ are daunted, to say the least, with a (new to them, most likely) language like S
 
 That being said, I think that two points alleviate this criticism:
 
-* The quality support for the Spark Python API
+* The quality support for the Spark Python
+  [API](http://spark.incubator.apache.org/docs/latest/python-programming-guide.html)
 * The [SparkR](http://amplab-extras.github.io/SparkR-pkg/) package, intended to expose processing on RDDs and some of the RDD transformations to R.
 
 These are attempts by the Spark community to reach out to the comfort-zone of the 

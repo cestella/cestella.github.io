@@ -458,7 +458,7 @@ Now, we have a RDD with the bigrams ranked by the $G$ statistical significance t
 The Results
 ---
 
-The result of this analysis is two rankings.  One based on frequency and one based on $G$ score.  I've taken the top 10 results and placed them in a table here along with their scores and relative rankings.  Note that while the table is sorted by $G$ score, the columns in the following table are sortable.  Also, for each score, the higher the score, the more important the pair of commands.
+The result of this analysis is two rankings.  One based on frequency and one based on $G$ score.  I've taken the top 10 results from each ranking and placed them in a table here along with their scores and relative rankings.  Note that while the table is sorted by $G$ score, the columns in the following table are sortable, so go explore.  Also, for each score, the higher the score, the more important the pair of commands.
 
 <link rel="stylesheet" href="files/css/theme.cstella.css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

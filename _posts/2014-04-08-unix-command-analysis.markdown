@@ -212,7 +212,7 @@ The general methodology is:
 Once we have these two rankings, we can eyeball the rankings and see how
 they differ and see if anything pops out.
 
-Resilient Distributed Datasets: An Aside
+Resilient Distributed Datasets: Our Workhorse
 ---
 I want to briefly discuss a bit of technology that we will be using
 heavily in the ensuing analysis, the Resilient Distributed Dataset (aka

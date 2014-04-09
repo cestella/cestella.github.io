@@ -195,6 +195,7 @@ here boil down to parsing the command line examples and extracting the pairs
 of commands that collocate.
 
 The general approach is:
+
 * Use [Antlr](http://www.antlr.org), a parser generator which can take a grammar and give us back an abstract syntax tree, to parse the unix lines according to the grammar generously borrowed from the libbash project [here](https://github.com/neloe/libbash/tree/master/bashast).
 * Take those abstract syntax trees and extract out the pairs of commands.
 

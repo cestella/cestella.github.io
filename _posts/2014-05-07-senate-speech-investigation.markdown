@@ -347,10 +347,10 @@ Analysis
 
 I've been playing with this visualization for a bit and here are a few interesting points that I see:
 
-* At cluster near (40, -75), you see an interesting cluster about social justice, women's rights, etc. with the discussion dominated by the democrats
-* At cluster near (20, 80), you see a bipartisan senators discussing the Russian START treaty.
-* At cluster near (-42, 23), you see a largely republican cluster discussing spending and the national debt.
-* At cluster near (79, 35), you see a fairly mixed discussion from gulf-coast senators (largely) about the BP oil spill.  This is interesting because it's an local issue (or at least localized issue) that brought together the two parties.
+* At cluster near $(40, -75)$, you see an interesting cluster about social justice, women's rights, etc. with the discussion dominated by the democrats
+* At cluster near $(20, 80)$, you see a bipartisan senators discussing the Russian START treaty.
+* At cluster near $(-42, 23)$, you see a largely republican cluster discussing spending and the national debt.
+* At cluster near $(79, 35)$, you see a fairly mixed discussion from gulf-coast senators (largely) about the BP oil spill.  This is interesting because it's an local issue (or at least localized issue) that brought together the two parties.
 
 There are plenty more, but generally, the impressions that I got for this organization/visualization technique were on the whole favorable:
 

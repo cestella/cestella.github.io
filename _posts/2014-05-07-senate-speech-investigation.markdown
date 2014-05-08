@@ -1,5 +1,5 @@
 ---
-title: Making Sense of Political Texts with Natural Language Processing
+title: Making Sense of Political Texts with NLP
 
 excerpt: Clustering senatorial speeches from 2008 by topic using t-stochastic neighbor embedding and latent dirichlet allocation.
 

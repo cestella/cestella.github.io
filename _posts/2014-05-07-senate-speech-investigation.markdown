@@ -20,8 +20,11 @@ Some notes about the following visualization:
 .tooltip {
   position: absolute;
   width: 300px;
-  height: 28px;
+  height: 45px;
   pointer-events: none;
+  border: 1px solid #000;
+  background-color: #FFF;
+  border-radius: 5px;
 }
 
 .brush {

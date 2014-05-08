@@ -24,7 +24,7 @@ if there are topics that are inherrently discussed more by members of one party 
 
 The Data
 ---
-I ran across a great little project by [John Myles White](https://github.com/johnmyleswhite) computing [Ideal Point Analysis](LINK ME).
+I ran across a great little project by [John Myles White](https://github.com/johnmyleswhite) computing [Ideal Point Analysis](http://jackman.stanford.edu/blog/?p=2084).
 During the course of this project, he gathered around 1400 [speeches and press releases](https://github.com/johnmyleswhite/senate_analyses/tree/master/raw_speeches_and_press_releases) from Senators from 2008.
 
 Topic Models
@@ -40,7 +40,7 @@ In short:
 
 >Topic models are a suite of algorithms that uncover the hidden thematic structure in document collections. These algorithms help us develop new ways to search, browse and summarize large archives of texts.
 
-There has been much written on topic modeling and, in particular, the favored approach to doing it (latent dirichlet allocation).  Rather than give yet another description, I'll [link](http://www.cs.princeton.edu/~blei/papers/Blei2012.pdf) to my favorite (and accompanying [video](http://www.youtube.com/watch?v=7BMsuyBPx90) ) and leave my expanation at the "gist" level.
+There has been much written on topic modeling and, in particular, the favored approach to doing it (latent dirichlet allocation).  Rather than give yet another description, I'll [link](http://www.cs.princeton.edu/~blei/papers/Blei2012.pdf) to my favorite with accompanying [video](http://www.youtube.com/watch?v=7BMsuyBPx90).
 
 So, given this ability to generate topics and get a distribution for each of the speeches or press releases, what can I do with it?  Well, one interesting question is whether there are certain topics that are inherrently partisan in nature.  Which I mean, are there clusters of documents mainly dominated by senators of a certain party.
 
@@ -53,7 +53,7 @@ which means visualizing a 300-dimensional space.  That is clearly out of the que
 Embedding
 ---
 
-There has been quite a lot of discussion, research and high-powered mathematical thinking given to ways to embed high-dimensional space into lower dimensional spaces.  One of the most interesting recent results from this space is [t-Distributed Stochastic Neighbor Embedding](http://homepage.tudelft.nl/19j49/t-SNE.html) by Laurens van der Maaten and the prolific [Geoffrey Hinton](http://www.cs.toronto.edu/~hinton/) of [Deep Learning](LINK) fame.  In fact, in lieu of a detailed explanation of t-SNE, I'm going to defer to Dr. van der Maaten's fantastic [tech talk at google](https://www.youtube.com/watch?v=RJVL80Gg3lA) about his approach.  
+There has been quite a lot of discussion, research and high-powered mathematical thinking given to ways to embed high-dimensional space into lower dimensional spaces.  One of the most interesting recent results from this space is [t-Distributed Stochastic Neighbor Embedding](http://homepage.tudelft.nl/19j49/t-SNE.html) by Laurens van der Maaten and the prolific [Geoffrey Hinton](http://www.cs.toronto.edu/~hinton/) of [Deep Learning](http://deeplearning.net/) fame.  In fact, in lieu of a detailed explanation of t-SNE, I'm going to defer to Dr. van der Maaten's fantastic [tech talk at google](https://www.youtube.com/watch?v=RJVL80Gg3lA) about his approach.  
 
 I will, however, give you a taste of the high level attributes of this embedding:
 
@@ -72,7 +72,6 @@ Some notes about the following visualization:
 * The points in the following visualization are colored based on the political party of the author/speaker.  
 * Hovering over points will create a tooltip under the point noting the author/speaker and a 5-word description of the topic
 * Selecting a set of points (by dragging the mouse and creating a box which can be placed over the points) will fill in the table below with a link to the original text, the author, and a 3-sentence summary of the most likely important sentences from the document.
-* Visualization is using the amazing visualization library [d3.js](http://d3js.org/).
 
 <style>
 .tooltip {
@@ -111,7 +110,7 @@ $(document).ready(function()
                           , showProcessing: true
                           , widgets: ['zebra','uitheme', 'scroller']
                           , widgetOptions : {
-                            scroller_height : 500,
+                            scroller_height : 200,
                             scroller_barWidth : 17,
                             scroller_jumpToHeader: true,
                             scroller_idPrefix : 's_'
@@ -134,6 +133,7 @@ $(document).ready(function()
             </tr>
         </thead>
       <tbody>
+        <tr><td colspan="3"><center><b>Highlight some points above for this summary to be filled in.</b></center></td></tr>
       </tbody>
     </table>
 </div>
@@ -345,7 +345,27 @@ updateDots();
 Analysis
 ---
 
-TBD
+I've been playing with this visualization for a bit and here are a few interesting points that I see:
+
+* At cluster near (40, -75), you see an interesting cluster about social justice, women's rights, etc. with the discussion dominated by the democrats
+* At cluster near (20, 80), you see a bipartisan senators discussing the Russian START treaty.
+* At cluster near (-42, 23), you see a largely republican cluster discussing spending and the national debt.
+* At cluster near (79, 35), you see a fairly mixed discussion from gulf-coast senators (largely) about the BP oil spill.  This is interesting because it's an local issue (or at least localized issue) that brought together the two parties.
+
+There are plenty more, but generally, the impressions that I got for this organization/visualization technique were on the whole favorable:
+
+* Clusters were pretty clear and relatively accurate
+* Investigating based on looking at clumps of documents in the embedded space helped bring out global structure that would have been hard to evaluate going document by document
+* Some topics are partisan and some topics are not
+
+There were some caveats, though, that I'd like to mention:
+
+* Figuring out how many topics to use to model a complex corpus of documents is largely trial and error from what I can tell.  Too few and you end up with topics merging together.
+* In general, topic modeling can only take you so far.  There ARE some errors and understanding what the topic *is* by a set of keywords can be challenging.
+* Like any analysis of strongly contextual documents, you have to be vigilent to not read too much into the structure.  Sometimes I found myself seeing what I expected to see in those clusters.
+
+On the whole, it was an entertaining and fascinating exercise.  I'm definitely going to be trying this out for other sets of documents.
+All of the code and data used to create this is hosted on github and I urge you all to pull it down and try it out!
 
 The Code
 ---
@@ -357,6 +377,7 @@ Some notes about the code:
 * I use [Drake](https://github.com/Factual/drake) to do the data flow generation of the data.  The output of the flow is a file containing JSON representation of the embedded data and all of the metadata associated (e.g. summarization, author, etc.).
 * The topic modeling work was done using the amazing [Mallet](http://mallet.cs.umass.edu/) library, which is great and really easy to use.
 * Summarization is done using Latent Semantic Analysis via the [sumy](https://pypi.python.org/pypi/sumy) library.
+* Visualization is using the amazing visualization library [d3.js](http://d3js.org/).
 
 
 Future Work

@@ -1,20 +1,78 @@
 ---
-title: Senatorial Speech Investigation
+title: Making Sense of Politics NLP-style
 
-excerpt: An analysis of which Unix commands appear together more than random chance would suggest.
+excerpt: Clustering senatorial speeches from 2008 by topic using t-stochastic neighbor embedding and latent dirichlet allocation.
 
 location: Cleveland, OH
 layout: blog-post
 
 ---
 
-Introduction
+One of the more interesting that I think can be done with computers is analyze text.  It's one of those
+things that, while not true understanding, lets you suspend disbelief and imagine your computer can
+understand this non-context-free mishmash of syntax and semantics that we call natural language.  Because
+of this, I've always been fascinated by the discipline of natural language processing.
+
+In particular, analyzing political text, some of the most contextual, sentiment-filled text in existence, seems
+like a great goal.  This difficulty largely prevents analytical insights from coming easy.  I think, however, that
+throwing heavy machinery at such a hard nut will never bear much fruit.  Rather, I think that the heavy machinery
+would be better suited to doing what computers are adept at: organizing and visualizing the data in a way which
+better allows a human to ask questions of it.
+
+So, to that end, let's take senatorial speeches and press releases, learn natural groupings based on their content and see
+if there are topics that are inherrently discussed more by members of one party versus another.
+
+The Data
+---
+I ran across a great little project by [John Myles White](https://github.com/johnmyleswhite) computing [Ideal Point Analysis](LINK ME).
+During the course of this project, he gathered around 1400 [speeches and press releases](https://github.com/johnmyleswhite/senate_analyses/tree/master/raw_speeches_and_press_releases) from Senators from 2008.
+
+Topic Models
 ---
 
-Empty Text
+I began to think, "What interesting questions can I ask of this data?"  One of my favorite bits of unsupervised learning in natural language 
+processing is topic modeling.  This, in short, is generating from the data a set of topics which the data covers.  Further, it gives you a 
+distribution of each topic for each document and the ability to generate this topic distribution from arbitrary (unseen) documents.  I like to 
+think of this as, given a set of newspapers, determine the sections (e.g. sports, business, comics, etc.).  For our purposes, we will represent 
+to us what each of these topics are by a set of keywords which best represent the topic.
+
+In short:
+
+>Topic models are a suite of algorithms that uncover the hidden thematic structure in document collections. These algorithms help us develop new ways to search, browse and summarize large archives of texts.
+
+There has been much written on topic modeling and, in particular, the favored approach to doing it (latent dirichlet allocation).  Rather than give yet another description, I'll [link](http://www.cs.princeton.edu/~blei/papers/Blei2012.pdf) to my favorite (and accompanying [video](http://www.youtube.com/watch?v=7BMsuyBPx90) ) and leave my expanation at the "gist" level.
+
+So, given this ability to generate topics and get a distribution for each of the speeches or press releases, what can I do with it?  Well, one interesting question is whether there are certain topics that are inherrently partisan in nature.  Which I mean, are there clusters of documents mainly dominated by senators of a certain party.
+
+But, before we can investigate that, we need to visualize these documents by their topics.  One way to do this is to just project down to the dominant topic, which is to say, for each document look at just the topic that is strongest.  This way we can group the documents by topic.  This has the benefit
+of being easily represented, but it loses the granularity of a document being a mixture of topics.
+
+Instead, what we'd *like* to do is look at how the documents cluster by their topics.  The issue with this is that we could have 50, 100, or even 300 topics
+which means visualizing a 300-dimensional space.  That is clearly out of the question.  What we'd need is some way to transform those high-dimensional points (representing the full distribution of topics) down into a space that we *can* visualize in such a way that the clustering is preserved.  Or, as a mathematician would say, we need to embed a high-dimensional surface into $R^2$ or $R^3$ in a way which (largely) preserves a distance metric.
+
+Embedding
+---
+
+There has been quite a lot of discussion, research and high-powered mathematical thinking given to ways to embed high-dimensional space into lower dimensional spaces.  One of the most interesting recent results from this space is [t-Distributed Stochastic Neighbor Embedding](http://homepage.tudelft.nl/19j49/t-SNE.html) by Laurens van der Maaten and the prolific [Geoffrey Hinton](http://www.cs.toronto.edu/~hinton/) of [Deep Learning](LINK) fame.  In fact, in lieu of a detailed explanation of t-SNE, I'm going to defer to Dr. van der Maaten's fantastic [tech talk at google](https://www.youtube.com/watch?v=RJVL80Gg3lA) about his approach.  
+
+I will, however, give you a taste of the high level attributes of this embedding:
+
+* It preserves "local structure" at the possible expense of "global structure"
+* It works particularly well on real-world datasets
+
+When I say "local structure", I mean that points that are nearby in the high dimensional space are likely to continue to be nearby in the low-dimensional space, whereas the individual clusters in the high dimensional space might be farther away, relatively, when projected into the lower dimensional space.  This is ideal for preserving the notion of clusters, which is all we care about.
 
 Visualization
 ---
+
+As I have set up in earlier sections, I generated a 50-topic model from the 1400 speeches and press releases from senators in 2008.  I then embedded each
+document into 2-dimensions using t-distributed stochastic neighbor embedding so that we can better visualize the clusters.  
+Some notes about the following visualization:
+
+* The points in the following visualization are colored based on the political party of the author/speaker.  
+* Hovering over points will create a tooltip under the point noting the author/speaker and a 5-word description of the topic
+* Selecting a set of points (by dragging the mouse and creating a box which can be placed over the points) will fill in the table below with a link to the original text, the author, and a 3-sentence summary of the most likely important sentences from the document.
+* Visualization is using the amazing visualization library [d3.js](http://d3js.org/).
 
 <style>
 .tooltip {
@@ -284,3 +342,26 @@ updateDots();
 
 </script>
 
+Analysis
+---
+
+TBD
+
+The Code
+---
+You can find all of the code and data at the following [github repo](https://github.com/cestella/senate_speech_investigation).
+
+Some notes about the code:
+
+* The t-SNE implementation is forked from the simple Python implementation located [here](http://homepage.tudelft.nl/19j49/t-SNE_files/tsne_python.zip).  The only modification is that I do not proactively PCA the data since it's already pretty low-dimensional (50-dimensions isn't THAT high).
+* I use [Drake](https://github.com/Factual/drake) to do the data flow generation of the data.  The output of the flow is a file containing JSON representation of the embedded data and all of the metadata associated (e.g. summarization, author, etc.).
+* The topic modeling work was done using the amazing [Mallet](http://mallet.cs.umass.edu/) library, which is great and really easy to use.
+* Summarization is done using Latent Semantic Analysis via the [sumy](https://pypi.python.org/pypi/sumy) library.
+
+
+Future Work
+---
+
+I'd be very interested to see if the t-sne algorithm can be implemented or parallelized via Spark which would open it up to much larger datasets.  As it stands, the algorithm (in naive form) is $O(n^2)$, but there is a variant called [Barnes-Hut SNE](http://arxiv.org/abs/1301.3342) ( L.J.P. van der Maaten. Barnes-Hut-SNE. In Proceedings of the International Conference on Learning Representations, 2013) which is $O(nlog(n))$.
+
+Also, I'm interested in visualizing other texts.  I think this is an interesting and fascinating way to explore a corpus of data.  I'll leave the rest of the ideas for future blog posts.  You can expect one describing the challenges of a spark implementation soon, I expect.

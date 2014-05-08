@@ -25,6 +25,7 @@ Some notes about the following visualization:
   border: 1px solid #000;
   background-color: #FFF;
   border-radius: 5px;
+  padding:10px;
 }
 
 .brush {

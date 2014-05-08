@@ -36,7 +36,7 @@ distribution of each topic for each document and the ability to generate this to
 think of this as, given a set of newspapers, determine the sections (e.g. sports, business, comics, etc.).  For our purposes, we will represent 
 to us what each of these topics are by a set of keywords which best represent the topic.
 
-In short:
+From [David Blei](http://www.cs.princeton.edu/~blei/topicmodeling.html):
 
 >Topic models are a suite of algorithms that uncover the hidden thematic structure in document collections. These algorithms help us develop new ways to search, browse and summarize large archives of texts.
 

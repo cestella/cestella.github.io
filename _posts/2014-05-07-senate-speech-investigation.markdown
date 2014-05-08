@@ -361,7 +361,7 @@ There are plenty more, but generally, the impressions that I got for this organi
 There were some caveats, though, that I'd like to mention:
 
 * Figuring out how many topics to use to model a complex corpus of documents is largely trial and error from what I can tell.  Too few and you end up with topics merging together.
-* In general, topic modeling can only take you so far.  There ARE some errors and understanding what the topic *is* by a set of keywords can be challenging.
+* In general, topic modeling can only take you so far.  There *are* some errors and understanding what the topic truly means by a set of keywords can be challenging.
 * Like any analysis of strongly contextual documents, you have to be vigilent to not read too much into the structure.  Sometimes I found myself seeing what I expected to see in those clusters.
 
 On the whole, it was an entertaining and fascinating exercise.  I'm definitely going to be trying this out for other sets of documents.

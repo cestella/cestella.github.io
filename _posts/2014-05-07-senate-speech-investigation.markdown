@@ -383,6 +383,6 @@ Some notes about the code:
 Future Work
 ---
 
-I'd be very interested to see if the t-sne algorithm can be implemented or parallelized via Spark which would open it up to much larger datasets.  As it stands, the algorithm (in naive form) is $O(n^2)$, but there is a variant called [Barnes-Hut SNE](http://arxiv.org/abs/1301.3342) ( L.J.P. van der Maaten. Barnes-Hut-SNE. In Proceedings of the International Conference on Learning Representations, 2013) which is $O(nlog(n))$.
+I'd be very interested to see if the t-sne algorithm can be implemented or parallelized via Spark which would open it up to much larger datasets.  As it stands, the algorithm (in naive form) is $O(n^2)$, but there is a variant called [Barnes-Hut SNE](http://arxiv.org/abs/1301.3342) ( L.J.P. van der Maaten. Barnes-Hut-SNE. In Proceedings of the International Conference on Learning Representations, 2013) which is $O(n\log(n))$.
 
 Also, I'm interested in visualizing other texts.  I think this is an interesting and fascinating way to explore a corpus of data.  I'll leave the rest of the ideas for future blog posts.  You can expect one describing the challenges of a spark implementation soon, I expect.

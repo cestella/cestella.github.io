@@ -25,7 +25,7 @@ if there are topics that are inherently discussed more by members of one party v
 Visualization
 ---
 
-As I have set up in earlier sections, I generated a 50-topic model (see below for more detail) from the 1400 speeches and press releases from senators in 2008.  I then embedded each
+I generated a 50-topic model (see below for more detail) from the 1400 speeches and press releases from senators in 2008.  I then embedded each
 document into 2-dimensions using t-distributed stochastic neighbor embedding (see below for more detail) so that we can better visualize the clusters.  
 Some notes about the following visualization:
 

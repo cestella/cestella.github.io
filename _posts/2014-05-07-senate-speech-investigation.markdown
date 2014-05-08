@@ -8,20 +8,6 @@ layout: blog-post
 
 ---
 
-One of the more interesting things that I think can be done with computers is analyze text.  It's one of those
-things that computers can do that lets you suspend disbelief and imagine your computer can
-understand this non-context-free mishmash of syntax and semantics that we call natural language.  Because
-of this, I've always been fascinated by the discipline of natural language processing.
-
-In particular, analyzing political text, some of the most contextual, sentiment-filled text in existence, seems
-like a great goal.  This difficulty largely prevents analytical insights from coming easy.  I think, however, that
-throwing heavy machinery at such a hard nut will never bear much fruit.  Rather, I think that the heavy machinery
-would be better suited to doing what computers are adept at: organizing and visualizing the data in a way which
-better allows a human to ask questions of it.
-
-So, to that end, let's take senatorial speeches and press releases, learn natural groupings based on their content and see
-if there are topics that are inherently discussed more by members of one party versus another.
-
 Visualization
 ---
 
@@ -301,6 +287,23 @@ function updateDots() {
 updateDots();
 
 </script>
+
+The Pitch
+---
+One of the more interesting things that I think can be done with computers is analyze text.  It's one of those
+things that computers can do that lets you suspend disbelief and imagine your computer can
+understand this non-context-free mishmash of syntax and semantics that we call natural language.  Because
+of this, I've always been fascinated by the discipline of natural language processing.
+
+In particular, analyzing political text, some of the most contextual, sentiment-filled text in existence, seems
+like a great goal.  This difficulty largely prevents analytical insights from coming easy.  I think, however, that
+throwing heavy machinery at such a hard nut will never bear much fruit.  Rather, I think that the heavy machinery
+would be better suited to doing what computers are adept at: organizing and visualizing the data in a way which
+better allows a human to ask questions of it.
+
+So, to that end, let's take senatorial speeches and press releases, learn natural groupings based on their content and see
+if there are topics that are inherently discussed more by members of one party versus another.
+
 
 The Data
 ---

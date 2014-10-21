@@ -1,5 +1,5 @@
 ---
-title: Data Science and Hadoop&#58; Impressions and Examples
+title: Data Science and Hadoop&#58; Impressions and Example
 
 excerpt: A discussion of the challenges of doing Data Science projects with Hadoop.
 location: Cleveland, OH

@@ -145,10 +145,9 @@ complicated data, just extracting features from it might require more
 arduous programming than analysts are used to.  A good example of this
 is within the realm of natural language processing projects.
 
+Also, ``Big Data'' data science isn't as convenient as small-data data science.  Contrast the ease of using [Mahout](http://mahout.apache.org) or Spark's [MLLib](http://spark.apache.org/docs/1.1.0/mllib-guide.html) with python's [scikit-learn](http://scikit-learn.org/stable/), [R](http://www.r-project.org/) or [SAS](http://www.sas.com/en_us/home.html).  It's not a contest; it's easier and quicker to deal with a few megabytes of data.  Since there is value in dealing with much more data, we have to eat the elephant, but it can be daunting without guidance and examples are few and far between. 
 
 Ultimately I think we focus so heavily on new and novel techniques, the game changing paradigm shifts (with our tongues placed firmly in our cheeks sometimes) without discussing the journey to getting there.  If we constantly look across the chasm without looking at the bridge beneath our feet, we run the risk of falling into the drink.
-
-``Big Data'' data science isn't as convenient as small-data data science.  Contrast the ease of using [Mahout](http://mahout.apache.org) or Spark's [MLLib](http://spark.apache.org/docs/1.1.0/mllib-guide.html) with python's [scikit-learn](http://scikit-learn.org/stable/), [R](http://www.r-project.org/) or [SAS](http://www.sas.com/en_us/home.html).  It's not a contest; it's easier and quicker to deal with a few megabytes of data.  Since there is value in dealing with much more data, we have to eat the elephant, but it can be daunting without guidance and examples are few and far between. 
 
 This brings me to why I wanted to create this post.  I intend to show a
 worked example of how you do what I've seen as day-to-day work as data analysts along with  some natural extension points that show how to use the system to do some possibly more interesting analysis.  Namely :

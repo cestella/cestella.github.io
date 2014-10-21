@@ -49,7 +49,7 @@ nature.
 Data has Inertia
 ---
 
-One of the competitive advantages of Hadoop is that cheap, commodity
+One of the competitive advantages of Hadoop is that inexpensive, commodity
 hardware and a powerful distributed computing environment makes Hadoop a
 pretty nice, cozy place for your data.  This all looks great on paper
 and in architecture slides.  The challenge, however, is actually getting

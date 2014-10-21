@@ -145,4 +145,6 @@ Up Next
 ---
 
 [Next](pyspark-openpayments-analysis-part-3.html), we do some basic
-structural analysis of the data with Spark SQL.
+structural analysis of the data with Spark SQL.  This is part of a
+broader [series](pyspark-openpayments-analysis.html) of posts about Data
+Science and Hadoop.

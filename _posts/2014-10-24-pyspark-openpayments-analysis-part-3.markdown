@@ -836,4 +836,6 @@ Up Next
 ---
 
 [Next](pyspark-openpayments-analysis-part-4.html), we do some outlier
-analysis on the payment data.
+analysis on the payment data. This is part of a
+broader [series](pyspark-openpayments-analysis.html) of posts about Data
+Science and Hadoop.

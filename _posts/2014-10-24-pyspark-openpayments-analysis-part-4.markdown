@@ -703,4 +703,6 @@ Up Next
 ---
 
 [Next](pyspark-openpayments-analysis-part-5.html), we look for anomalies
-in our payment data by using Benford's Law.
+in our payment data by using Benford's Law. This is part of a
+broader [series](pyspark-openpayments-analysis.html) of posts about Data
+Science and Hadoop.

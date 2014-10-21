@@ -354,10 +354,24 @@ out a small set of columns:
 * Amount of payment as float
 
 Now, those of you with experience doing analysis are now cringing at my
-use of a float for money.  I did not see a way to use SparkSQL to
-support a data type suitable for money operations.  Be that as it may,
-take this analysis with a grain of salt.  If I were doing this in
-production, I'd have used Hive which does have a decimal type.
+use of a float for money.  Spark has support for a "decimal" type, which
+is backed by Java's BigDecimal.  Unfortunately, I had some trouble
+getting the decimal type to work in the python bindings.  It complained:
+    
+    java.lang.ClassCastException: java.math.BigDecimal cannot be cast to
+scala.math.BigDecimal
+     scala.math.Numeric$BigDecimalIsFractional$.plus(Numeric.scala:182)
+     org.apache.spark.sql.catalyst.expressions.Add$$anonfun$eval$2.apply(arithmetic.scala:58)
+     org.apache.spark.sql.catalyst.expressions.Add$$anonfun$eval$2.apply(arithmetic.scala:58)
+     org.apache.spark.sql.catalyst.expressions.Expression.n2(Expression.scala:114)
+     org.apache.spark.sql.catalyst.expressions.Add.eval(arithmetic.scala:58)
+     ...
+    (Note: this is with Spark 1.1.0)
+
+Given this bug, I did not see a way to use SparkSQL to
+support a data type suitable for money operations.  If I were doing this in
+production, I'd have used the Hive Spark SQL interface which does have 
+a decimal type.
 
 Top Payment Reasons by Number of Payments
 ---
@@ -2036,7 +2050,7 @@ than 350 gifts out over the course of the year.
 
 Two things that are interesting:
 
-* Mentor Worldwide does not fitting the decreasing probability distribution that we.  Many payers diverge from benford's law, but it's interesting when they break the basic form of decreasing probabilities as digits progress from 1 through 9.
+* Mentor Worldwide does not fitting the decreasing probability distribution that we would expect given the Benford distribution.  Many payers diverge from Benford's law, but it's interesting when they break the basic form of decreasing probabilities as digits progress from 1 through 9.
 * Benco Dental Supply has a huge amount of payments starting with 1.  This is likely an indication that they have a standard gift that they give out.
 
 {% highlight python %}
@@ -2076,7 +2090,7 @@ certainly possible to fit the distribution well.
 benford_summary("Travel and Lodging", t='worst')
 {% endhighlight %}
 
-You can see a few payers diverging from the general form of benford's
+You can see a few payers diverging from the general form of Benford's
 distribution here.  LDR Holding is the outlier in terms of goodness of
 fit as you can see from the density plot below as well.
 
@@ -2149,7 +2163,7 @@ the *other* parts of the ecosystem such as Pig, Hive, etc. is an
 extremely compelling aspect as well.  Ultimately, we're approaching a
 very cost effective and well thought out system for analyzing data.
 
-It's not all roses, however.  When something goes wrong, it can be challenging to trace back the problem from the mix of Java/scala and Python stack trace that is returned to you.
+It's not all roses, however.  When something goes wrong, it can be challenging to trace back the problem from the mix of Java/Scala and Python stack trace that is returned to you.
 
 There can be some IT challenges as well.  If you use a package in python in a RDD operation, you must have the package installed on the cluster.  This may pose some challenges as many different people are going to need differing versions of dependencies.  Traditionally this is handled through things like virtualenv, but executing a function within the context of a virtualenv isn't supported and, even if it were, managing a virtualenv across a set of data nodes can be a challenge in itself.
 

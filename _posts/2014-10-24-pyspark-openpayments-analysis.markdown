@@ -39,7 +39,7 @@ owning a cluster and gaining insight can be a daunting task.  I'll
 just list a few challenges that I've noticed in my travels:
 
 * Data has inertia
-* Hadoop is still moving from a topiary sculpture to a climbing tree
+* Hadoop is still maturing as a platform
 * Choices can be paralyzing
 
 The first is an organizational challenge, the second two are
@@ -77,7 +77,7 @@ same principal applies to all projects that require an abundance of
 data.  No data-oriented project can survive if starved of data and
 almost all Hadoop projects are data-oriented.
 
-Hadoop was a Topiary Sculpture
+Hadoop is Still Maturing as a Platform
 ---
 
 When I was young, I liked to climb trees.  Growing up in rural Louisiana, I had plenty of opportunities on this front.  As such, I got fairly good at picking out a good climbing tree.  There is a non-zero intersection of trees which are good for climbing and trees which are pretty to look at or have some satisfying structural characteristics.

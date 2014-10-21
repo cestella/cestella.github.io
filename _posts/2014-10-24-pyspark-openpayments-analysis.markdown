@@ -29,7 +29,7 @@ That's pretty concerning for those of us hoping for Hadoop to [cross the chasm](
 One benefit from my vantage point within the consulting wing of a Hadoop
 [distribution](http://www.hortonworks.com) is that I get to see quite a
 few Hadoop projects.  Being that I'm part of the Data Science team, I
-get to have a decidedly Data Science-biased view of the Hadoop world.
+get to have a decidedly Data Science oriented view of the Hadoop world.
 Furthermore, I get to see them in both startups as well as big
 enterprises.  Even better, being a resident of and working with
 organizations from a [fly-over state](http://en.wikipedia.org/wiki/Flyover_country), I have a decidedly non-Silicon Valley perspective.

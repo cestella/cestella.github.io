@@ -53,7 +53,7 @@ One of the competitive advantages of Hadoop is that inexpensive, commodity
 hardware and a powerful distributed computing environment makes Hadoop a
 pretty nice, cozy place for your data.  This all looks great on paper
 and in architecture slides.  The challenge, however, is actually getting
-it.
+the data to the platform.
 
 Turns out moving data can be a tricky prospect.  Much ink and
 bits have been spilled discussing the technical approaches to collecting

@@ -1,7 +1,6 @@
 ---
 title: Data Science and Hadoop&#58; Benford's Law Analysis
-
-excerpt: Using Benford's Law to analyze payment data between physicians and medical manufacturers.
+excerpt: Benford's Law analysis of healthcare payment data with Spark using Median Absolute Divergence. 
 location: Cleveland, OH
 layout: blog-post
 

@@ -1,7 +1,6 @@
 ---
 title: Data Science and Hadoop&#58; Basic Structural Analysis
-
-excerpt: A discussion of the challenges of doing Data Science projects with Hadoop.
+excerpt: Basic structural analysis of healthcare payment data using Spark SQL and Python.
 location: Cleveland, OH
 layout: blog-post
 

@@ -1,7 +1,6 @@
 ---
 title: Data Science and Hadoop&#58; Outlier Analysis
-
-excerpt: A discussion of the challenges of doing Data Science projects with Hadoop.
+excerpt: Outlier analysis of healthcare payment data with Spark using Median Absolute Divergence. 
 location: Cleveland, OH
 layout: blog-post
 

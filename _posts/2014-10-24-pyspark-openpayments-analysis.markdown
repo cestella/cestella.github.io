@@ -15,7 +15,7 @@ associated with ``Big Data'' has an opinion. Remarks are
 made, emails written, Powerpoint decks created; it's a busy day, for
 sure.  
 
-People cannot be blamed for being concerned about it since
+People cannot be blamed for being concerned since
 according to [Jeff Kelly](http://www.informationweek.com/big-data/big-data-analytics/3-roadblocks-to-big-data-roi/d/d-id/1111593?)
 , a Wikibon analyst, the ROI of these big data projects does not match
 expectations:

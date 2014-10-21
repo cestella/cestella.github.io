@@ -42,7 +42,7 @@ just list a few challenges that I've noticed in my travels:
 * Hadoop is still maturing as a platform
 * Choices can be paralyzing
 
-The first is an organizational challenge, the second two are
+The first is an organizational challenge, the second a 
 technical/product challenges and the final is a challenge of human
 nature.
 

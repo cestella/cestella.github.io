@@ -59,7 +59,7 @@ Turns out moving data can be a tricky prospect.  Much ink and
 bits have been spilled discussing the technical approaches and
 challenges to collecting
 your data into a data lake.  I make you suffer through yet another
-discussion of the finer points between [sqoop](http://sqoop.apache.org), [flume](http://flume.apache.org), etc.  The technical challenges are almost never the problems.
+discussion of the finer points between [sqoop](http://sqoop.apache.org), [flume](http://flume.apache.org), etc.  The technical challenges are almost never the long poles in the tent.
 
 Rather, what I have witnessed is that getting that data to start moving
 can be arduous and require political capital.  I have noticed that there 

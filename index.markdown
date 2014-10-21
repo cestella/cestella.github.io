@@ -21,7 +21,7 @@ A [feed][] of the most recent posts is available.
 Recent Posts
 ------------
 
-{% for post in site.posts limit:5 %}
+{% for post in site.posts limit:20 %}
 <div class="section list">
   <h1>{{ post.date | date_to_string }}</h1>
   <p class="line">

@@ -2248,3 +2248,5 @@ It's not all roses, however.  When something goes wrong, it can be challenging t
 
 There can be some IT challenges as well.  If you use a package in python in a RDD operation, you must have the package installed on the cluster.  This may pose some challenges as many different people are going to need differing versions of dependencies.  Traditionally this is handled through things like virtualenv, but executing a function within the context of a virtualenv isn't supported and, even if it were, managing a virtualenv across a set of data nodes can be a challenge in itself.
 
+If you would prefer to see the raw IPython Notebook, you can find it
+hosted on [nbviewer.ipython.org](http://nbviewer.ipython.org/url/blog.caseystella.com/files/ref_data/open_payments_files/open_payments.ipynb).

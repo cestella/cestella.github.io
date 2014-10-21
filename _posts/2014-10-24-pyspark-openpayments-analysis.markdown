@@ -34,8 +34,8 @@ Furthermore, I get to see them in both startups as well as big
 enterprises.  Even better, living in and working with
 organizations from a [fly-over state](http://en.wikipedia.org/wiki/Flyover_country), I have a decidedly non-Silicon Valley perspective.
 
-From this position, it's not hard to see why crossing the chasm between
-owning a cluster and gaining insight can be a daunting task.  I'll
+From this position, it's not hard to see making the leap from 
+owning a cluster to gaining insight from your data can be a daunting task.  I'll
 just list a few challenges that I've noticed in my travels:
 
 * Data has inertia

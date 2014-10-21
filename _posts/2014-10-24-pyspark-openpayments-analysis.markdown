@@ -93,7 +93,7 @@ It started out very self contained and internally consistently.  If you used Jav
 <img src="files/ref_data/open_payments_files/Topiaryelephant.jpg"
      style="width:650px"
 />
-[Topiary Elephant](http://en.wikipedia.org/wiki/Topiary#mediaviewer/File:Topiaryelephant.jpg) in Bang Pa In Palace, Thailand. CC BY-SA 3.0
+<sub>[Topiary Elephant](http://en.wikipedia.org/wiki/Topiary#mediaviewer/File:Topiaryelephant.jpg) in Bang Pa In Palace, Thailand. CC BY-SA 3.0</sub>
 
 Now, as Hadoop matures, we see branches to other platforms growing
 and branches to other distributed computing paradigms growing.  On the

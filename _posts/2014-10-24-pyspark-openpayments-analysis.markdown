@@ -205,6 +205,9 @@ $(document).ready(function()
 ); 
 </script>
 
+Preliminaries and Preprocessing
+---
+
 Let's start with some preliminary imports and helper functions.
 
 {% highlight python %}

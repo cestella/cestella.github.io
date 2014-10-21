@@ -368,8 +368,8 @@ scala.math.BigDecimal
      ...
     (Note: this is with Spark 1.1.0)
 
-Given this bug, I did not see a way to use SparkSQL to
-support a data type suitable for money operations, so I skipped treated the amounts as floats.   In production, I'd have probably investigated more what I was doing wrong or moved to the Hive interface for Spark SQL.
+Given this bug, I did not see a way to use Spark SQL to
+support a data type suitable for money operations, so I treat the amounts as floats.   In production, I'd have probably investigated more what I was doing wrong or moved to the Hive interface for Spark SQL.
  
 Top Payment Reasons by Number of Payments
 ---

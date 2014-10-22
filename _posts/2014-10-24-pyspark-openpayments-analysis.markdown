@@ -26,6 +26,23 @@ expectations:
 
 That's pretty concerning for those of us hoping for Hadoop to [cross the chasm](http://en.wikipedia.org/wiki/Crossing_the_Chasm) soon.  As one might imagine, there's been quite a bit of hand wringing about the problem.  I don't take such a dim view of it, though.  It's a matter of maturity and I'll give some of my impressions shortly on why it may be hard to fulfill the data science portion of the ROI currently.
 
+Outline
+===
+
+* [Data Science Challenges](#data_science_challenge)
+  * [Data has Inertia](#data_has_inertia)
+  * [Hadoop is Still Maturing as a Platform](#hadoop_maturing)
+  * [Analysis Paralysis](#analysis_paralysis)
+* [Example Analysis with PySpark](#example_analysis)
+  * [Data Overview and Preprocessing](pyspark-openpayments-analysis-part-2.html)
+  * [Basic Structural Analysis](pyspark-openpayments-analysis-part-3.html)
+  * [Outlier Analysis](pyspark-openpayments-analysis-part-4.html)
+  * [Benford's Law Analysis](pyspark-openpayments-analysis-part-5.html)
+*  [Conclusions](#conclusions)
+  * [This is a Dull Blade Exercise](#dull_blade)
+  * [PySpark + Hadoop as a Platform](#pyspark)
+
+<div id="data_science_challenge"/>
 Data Science Challenges
 ===
 
@@ -49,6 +66,7 @@ The first is an organizational challenge, the second a
 technical/product challenges and the final is a challenge of human
 nature.
 
+<div id="data_has_inertia"/>
 Data has Inertia
 ---
 
@@ -81,6 +99,7 @@ same principal applies to all projects that require an abundance of
 data.  No data-oriented project can survive if starved of data and
 almost all Hadoop projects are data-oriented.
 
+<div id="hadoop_maturing"/>
 Hadoop is Still Maturing as a Platform
 ---
 
@@ -110,6 +129,7 @@ it's the realization by the community that we need more choices.
 That being said, it's early days and we're not that far down the path to
 the new way of thinking.  This will be solved with time and maturity.
 
+<div id="analysis_paralysis"/>
 Analysis Paralysis
 ---
 
@@ -153,7 +173,8 @@ Also, ``Big Data'' data science isn't as convenient as small-data data science. 
 
 Ultimately I think we focus so heavily on new and novel techniques, the game changing paradigm shifts (with our tongues placed firmly in our cheeks sometimes) without discussing the journey to getting there.  If we constantly look across the chasm without looking at the bridge beneath our feet, we run the risk of falling into the drink.
 
-Example Analysis
+<div id="example_analysis"/>
+Example Analysis with PySpark
 ===
 
 
@@ -173,9 +194,11 @@ The individual phases have been split into 4 parts:
 * [Outlier Analysis](pyspark-openpayments-analysis-part-4.html)
 * [Benford's Law Analysis](pyspark-openpayments-analysis-part-5.html)
 
+<div id="conclusions"/>
 Conclusions
 ===
 
+<div id="dull_blade"/>
 This is a Dull Blade Exercise
 ---
 
@@ -186,6 +209,7 @@ such, I intended to demonstrate some of the basic and slightly more
 advanced analysis techniques that are open to you using the Hadoop
 platform.
 
+<div id="pyspark"/>
 PySpark + Hadoop as a Platform
 ---
 

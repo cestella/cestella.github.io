@@ -374,7 +374,7 @@ than 350 gifts out over the course of the year.
 
 Two things that are interesting:
 
-* Mentor Worldwide does not fitting the decreasing probability distribution that we would expect given the Benford distribution.  Many payers diverge from Benford's law, but it's interesting when they break the basic form of decreasing probabilities as digits progress from 1 through 9.
+* Mentor Worldwide does not fit the decreasing probability distribution that we would expect.  Many payers diverge from Benford's law, but it's interesting when they break the basic form of decreasing probabilities as digits progress from 1 through 9.
 * Benco Dental Supply has a huge amount of payments starting with 1.  This is likely an indication that they have a standard gift that they give out.
 
 {% highlight python %}

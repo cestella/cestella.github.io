@@ -33,7 +33,7 @@ Outline
   * [Data has Inertia](#data_has_inertia)
   * [Hadoop is Still Maturing as a Platform](#hadoop_maturing)
   * [Analysis Paralysis](#analysis_paralysis)
-* [Example Analysis with PySpark](#example_analysis)
+* [Example Analysis with PySpark and Hadoop](#example_analysis)
   * [Data Overview and Preprocessing](pyspark-openpayments-analysis-part-2.html)
   * [Basic Structural Analysis](pyspark-openpayments-analysis-part-3.html)
   * [Outlier Analysis](pyspark-openpayments-analysis-part-4.html)
@@ -174,7 +174,7 @@ Also, ``Big Data'' data science isn't as convenient as small-data data science. 
 Ultimately I think we focus so heavily on new and novel techniques, the game changing paradigm shifts (with our tongues placed firmly in our cheeks sometimes) without discussing the journey to getting there.  If we constantly look across the chasm without looking at the bridge beneath our feet, we run the risk of falling into the drink.
 
 <div id="example_analysis"/>
-Example Analysis with PySpark
+Example Analysis with PySpark and Hadoop
 ===
 
 

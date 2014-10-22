@@ -39,8 +39,8 @@ Outline
   * [Outlier Analysis](pyspark-openpayments-analysis-part-4.html)
   * [Benford's Law Analysis](pyspark-openpayments-analysis-part-5.html)
 *  [Conclusions](#conclusions)
-  * [This is a Dull Blade Exercise](#dull_blade)
-  * [PySpark + Hadoop as a Platform](#pyspark)
+   * [This is a Dull Blade Exercise](#dull_blade)
+   * [PySpark + Hadoop as a Platform](#pyspark)
 
 <div id="data_science_challenge"/>
 Data Science Challenges

@@ -15,7 +15,7 @@ This is the last part of a 5 part [series](pyspark-openpayments-analysis.html) o
 * [Data Overview and Preprocessing](pyspark-openpayments-analysis-part-2.html)
 * [Basic Structural Analysis](pyspark-openpayments-analysis-part-3.html)
 * [Outlier Analysis](pyspark-openpayments-analysis-part-4.html)
-* [Benford's Law Analysis](pyspark-openpayments-analysis-part-5.html)
+* Benford's Law Analysis
 
 Benford's Law
 ===

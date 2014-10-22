@@ -166,7 +166,7 @@ worked example of how you do what I've seen as day-to-day work as data analysts 
 
 Over the course of the next few blog posts, I will take some recently opened data from the Center of Medicare and Medicaid detailing the financial relationships between physicians, hospitals, etc and medical manufacturers and use Spark's Python bindings to look at the data, its shape, its outliers and look for data that may be amiss.
 
-The indidual phases have been split into 4 parts:
+The individual phases have been split into 4 parts:
 
 * [Data Overview and Preprocessing](pyspark-openpayments-analysis-part-2.html)
 * [Basic Structural Analysis](pyspark-openpayments-analysis-part-3.html)

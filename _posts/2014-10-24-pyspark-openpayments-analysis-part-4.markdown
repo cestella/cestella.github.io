@@ -1,10 +1,23 @@
 ---
-title: Data Science and Hadoop&#58; Outlier Analysis
+title: Data Science and Hadoop&#58; Part 4, Outlier Analysis
 excerpt: Outlier analysis of healthcare payment data with Spark using Median Absolute Divergence. 
 location: Cleveland, OH
 layout: blog-post
 
 ---
+Context
+---
+
+This is the fourth part of a 5 part [series](pyspark-openpayments-analysis.html) on analyzing data with PySpark:
+
+* [Data Science and Hadoop : Impressions](pyspark-openpayments-analysis.html)
+* [Data Overview and Preprocessing](pyspark-openpayments-analysis-part-2.html)
+* [Basic Structural Analysis](pyspark-openpayments-analysis-part-3.html)
+* Outlier Analysis
+* [Benford's Law Analysis](pyspark-openpayments-analysis-part-5.html)
+
+Outlier Analysis
+===
 
 Generating summary statistics is very helpful for 
 
@@ -34,7 +47,7 @@ so they can be acted on.  This action can be raising an alert, logging a
 warning or generating a report, but ultimately we want a technique to
 find these outliers quickly and without human intervention.
 
-Outlier Analysis via Median Absolute Divergence
+Median Absolute Divergence
 ---
 
 We're looking to create a mechanism to rank data points by their likelihood of being an outlier along with a threshold to differentiate them from inliers.

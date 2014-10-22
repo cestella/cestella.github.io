@@ -1,12 +1,25 @@
 ---
-title: Data Science and Hadoop&#58; Basic Structural Analysis
+title: Data Science and Hadoop&#58; Part 3, Basic Structural Analysis
 excerpt: Basic structural analysis of healthcare payment data using Spark SQL and Python.
 location: Cleveland, OH
 layout: blog-post
 
 ---
+Context
+---
 
-For the first portion of the analysis, we'll perform some basic queries
+This is the third part of a 5 part [series](pyspark-openpayments-analysis.html) on analyzing data with PySpark:
+
+* [Data Science and Hadoop : Impressions](pyspark-openpayments-analysis.html)
+* [Data Overview and Preprocessing](pyspark-openpayments-analysis-part-2.html)
+* Basic Structural Analysis
+* [Outlier Analysis](pyspark-openpayments-analysis-part-4.html)
+* [Benford's Law Analysis](pyspark-openpayments-analysis-part-5.html)
+
+Basic Structural Analysis
+===
+
+Now that we have the data prepped and loaded into HDFS, let's perform some basic queries
 to get a sense of the data's shape and size.  This data is
 fundamentally relational (it's a single table), so thankfully a query
 language was invented a while ago to assist us in this task.  It works
@@ -27,8 +40,8 @@ $(document).ready(function()
 ); 
 </script>
 
-Technical Details
-===
+Some Preliminaries
+---
 Let's start with some preliminary imports and helper functions.
 
 {% highlight python %}

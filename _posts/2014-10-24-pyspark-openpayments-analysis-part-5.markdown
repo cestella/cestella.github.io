@@ -1,10 +1,24 @@
 ---
-title: Data Science and Hadoop&#58; Benford's Law Analysis
+title: Data Science and Hadoop&#58; Part 5, Benford's Law Analysis
 excerpt: Benford's Law analysis of healthcare payment data with Spark using Median Absolute Divergence. 
 location: Cleveland, OH
 layout: blog-post
 
 ---
+
+Context
+---
+
+This is the last part of a 5 part [series](pyspark-openpayments-analysis.html) on analyzing data with PySpark:
+
+* [Data Science and Hadoop : Impressions](pyspark-openpayments-analysis.html)
+* [Data Overview and Preprocessing](pyspark-openpayments-analysis-part-2.html)
+* [Basic Structural Analysis](pyspark-openpayments-analysis-part-3.html)
+* [Outlier Analysis](pyspark-openpayments-analysis-part-4.html)
+* [Benford's Law Analysis](pyspark-openpayments-analysis-part-5.html)
+
+Benford's Law
+===
 
 [Benford's Law](http://en.wikipedia.org/wiki/Benford's_law) is an
 interesting observation made by physicist Frank Benford in the 30's

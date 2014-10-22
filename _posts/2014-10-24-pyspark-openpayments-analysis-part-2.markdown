@@ -1,11 +1,25 @@
 ---
-title: Data Science and Hadoop&#58; Data Overview and Preprocessing
+title: Data Science and Hadoop&#58; Part 2, Data Overview and Preprocessing
 
-excerpt: Data Overview and preprocessing for Center for Medicare and Medicaid open payments data.
+excerpt: Part 1 of a series of analyses with PySpark with healthcare financial data. Data Overview and preprocessing for Center for Medicare and Medicaid open payments data.
 
 location: Cleveland, OH
 layout: blog-post
 
+---
+
+Context
+---
+
+This is the second part of a 5 part [series](pyspark-openpayments-analysis.html) on analyzing data with PySpark:
+
+* [Data Science and Hadoop : Impressions](pyspark-openpayments-analysis.html)
+* Data Overview and Preprocessing
+* [Basic Structural Analysis](pyspark-openpayments-analysis-part-3.html)
+* [Outlier Analysis](pyspark-openpayments-analysis-part-4.html)
+* [Benford's Law Analysis](pyspark-openpayments-analysis-part-5.html)
+
+The Data
 ---
 
 As part of the Social Security Act, the Center for Medicare and Medicaid Services has begun to publish [data](http://www.cms.gov/OpenPayments/Explore-the-Data/Dataset-Downloads.html) detailing the relationship between physicians and medical institutions. 

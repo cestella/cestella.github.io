@@ -69,7 +69,7 @@ variability in a univariate dataset.  It's definition is
 straightforward:
 
 >Given univariate data $X$ with $\tilde{x}=$median($X$), 
->MAD($X$)=median($\forall x_i \in X, |x_i - \tilde{x}|$).
+>MAD($X$)=median(\{$\forall x_i \in X \lvert |x_i - \tilde{x}|$\}).
 
 As compared to standard deviation, it's a bit more resilient to outliers because it doesn't have a square weighing large values very heavily.  Quoting from the [Engineering Statistics
 Handbook](http://www.itl.nist.gov/div898/handbook/eda/section3/eda35h.htm):

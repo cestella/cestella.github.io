@@ -61,7 +61,7 @@ the data to the platform.
 Turns out moving data can be a tricky prospect.  Much ink and
 bits have been spilled discussing the technical approaches and
 challenges to collecting
-your data into a data lake.  I make you suffer through yet another
+your data into a data lake.  I won't make you suffer through yet another
 discussion of the finer points between [sqoop](http://sqoop.apache.org), [flume](http://flume.apache.org), etc.  The technical challenges are almost never the long poles in the tent.
 
 Rather, what I have witnessed is that getting that data to start moving
@@ -115,14 +115,14 @@ Analysis Paralysis
 
 Data science isn't a new thing.  I know, this is a brave statement and a
 deep conclusion.  Forgiving its obviousness and pith, I actually mean
-that most organizations are already doing and have been doing for years one of the core *things* people talk about as data science: developing insights on their data.
+that most organizations are already doing and have been doing for years one of the core *things* people talk about as data science: developing insights from  their data.
 
 I walk into organizations and I talk with the data analysts and I ask
 them about how they do their job on a day-to-day basis.  Most of them
-talk to me about things somewhere in the range logistic regression in SAS and doing very complex SQL in a data warehouse.  I ask them what their pains are and almost to a person, they always say something like the following:
+talk to me about things somewhere between logistic regression in SAS and doing very complex SQL in a data warehouse.  I ask them what their pains are and almost to a person, they always say something like the following:
 
 * Copies of the data are expensive with my limited quota
-* Getting the data I want onto the system I want to analyze it on takes more than 24 hours.
+* Getting the data from one system to another takes 24 hours at least.
 
 The data scientists aren't clamoring for the things that you see so
 often touted as the benefits of ``Big Data'':
@@ -153,6 +153,10 @@ Also, ``Big Data'' data science isn't as convenient as small-data data science. 
 
 Ultimately I think we focus so heavily on new and novel techniques, the game changing paradigm shifts (with our tongues placed firmly in our cheeks sometimes) without discussing the journey to getting there.  If we constantly look across the chasm without looking at the bridge beneath our feet, we run the risk of falling into the drink.
 
+Example Analysis
+===
+
+
 This brings me to why I wanted to create this post.  I intend to show a
 worked example of how you do what I've seen as day-to-day work as data analysts along with  some natural extension points that show how to use the system to do some possibly more interesting analysis.  Namely :
 
@@ -160,13 +164,9 @@ worked example of how you do what I've seen as day-to-day work as data analysts 
 * Generate reporting/images to communicate those characteristics to other people
 * Mine the data for likely incorrect or interesting data points that break with the characteristics found above.
 
-Example Analysis
-===
+Over the course of the next few blog posts, I will take some recently opened data from the Center of Medicare and Medicaid detailing the financial relationships between physicians, hospitals, etc and medical manufacturers and use Spark's Python bindings to look at the data, its shape, its outliers and look for data that may be amiss.
 
-I think it would be useful to start to fill in the gap of worked examples analyzing data with Hadoop.  I'm targeting some recently opened data from the Center of Medicare and Medicaid detailing the financial relationships between physicians, hospitals, etc and medical manufacturers.
-
-I'm using, primarily, Spark's Python bindings with data on Hadoop to do
-the analysis.  The indidual phases have been split into 4 parts:
+The indidual phases have been split into 4 parts:
 
 * [Data Overview and Preprocessing](pyspark-openpayments-analysis-part-2.html)
 * [Basic Structural Analysis](pyspark-openpayments-analysis-part-3.html)

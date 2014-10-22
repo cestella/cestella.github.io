@@ -158,7 +158,7 @@ Example Analysis
 
 
 This brings me to why I wanted to create this post.  I intend to show a
-worked example of how you do what I've seen as day-to-day work as data analysts along with  some natural extension points that show how to use the system to do some possibly more interesting analysis.  Namely :
+worked example of how you do what I've seen as day-to-day work as data analysts along with  some natural extension points that show how to use Hadoop to do possibly more interesting analysis.  Namely :
 
 * Understand some fundamental characteristics of the data to be analyzed
 * Generate reporting/images to communicate those characteristics to other people

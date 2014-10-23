@@ -1,6 +1,6 @@
 ---
 title: Data Science and Hadoop&#58; Part 4, Outlier Analysis
-excerpt: Outlier analysis of healthcare payment data with Spark using Median Absolute Divergence. 
+excerpt: Outlier analysis of healthcare payment data with Spark using Median Absolute Deviation. 
 location: Cleveland, OH
 layout: blog-post
 
@@ -47,7 +47,7 @@ so they can be acted on.  This action can be raising an alert, logging a
 warning or generating a report, but ultimately we want a technique to
 find these outliers quickly and without human intervention.
 
-Median Absolute Divergence
+Median Absolute Deviation
 ---
 
 We're looking to create a mechanism to rank data points by their likelihood of being an outlier along with a threshold to differentiate them from inliers.
@@ -62,7 +62,7 @@ path, but be aware that there are
 [book-length](http://www.itl.nist.gov/div898/handbook/eda/section4/eda43.htm#Barnett) treatments of the subject of outlier analysis.
 
 [Median Absolute
-Divergence](http://en.wikipedia.org/wiki/Median_absolute_deviation) is a
+Deviation](http://en.wikipedia.org/wiki/Median_absolute_deviation) is a
 robust statistic used, as standard deviations, as a measure of
 variability in a univariate dataset.  It's definition is
 straightforward:
@@ -144,7 +144,7 @@ be tighter as of this writing) or a streaming estimate.  Needless to say, this i
 
  
 {% highlight python %}
-#Outlier analysis using Median Absolute Divergence
+#Outlier analysis using Median Absolute Deviation
 
 #Using reservoir sampling, uniformly sample N points
 #requires O(N) memory
@@ -192,7 +192,7 @@ def get_inliers(reason_amount_pairs, size=2000):
     return group_by_reason.map(lambda t : (t[0], sample_points(t[1], size)))
 
 
-#Return the outliers based on Median Absolute Divergence
+#Return the outliers based on Median Absolute Deviation
 #See http://www.itl.nist.gov/div898/handbook/eda/section3/eda35h.htm 
 #for more info.
 #The input key structure is reason_specialty => dict(amount
@@ -202,13 +202,13 @@ def get_inliers(reason_amount_pairs, size=2000):
 #                                                   )
 def get_outliers(reason_amount_pairs, thresh=3.5):
     """
-        This uses the median absolute divergence (MAD) statistic to find
+        This uses the median absolute deviation (MAD) statistic to find
         outliers for each reason x specialty partitions.
         
         Outliers are computed as follows: 
         * Let X be all the payments for a given specialty, reason pair
         * Let x_i be a payment in X
-        * Let MAD be the median absolute divergence, defined as
+        * Let MAD be the median absolute deviation, defined as
           MAD = median( for all x in X, | x - median(X)| )
         * Let M_i be the modified z-score for payment x_i, defined as
           0.6745*(x_i − median(X) )/MAD

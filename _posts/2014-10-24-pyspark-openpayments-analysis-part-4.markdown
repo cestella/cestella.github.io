@@ -60,7 +60,6 @@ to the straightforward, like setting a threshold based on standard
 deviations away from the mean.  For our purposes, we'll choose a middle
 path, but be aware that there are
 [book-length](http://www.itl.nist.gov/div898/handbook/eda/section4/eda43.htm#Barnett) treatments of the subject of outlier analysis.
-of 
 
 [Median Absolute
 Divergence](http://en.wikipedia.org/wiki/Median_absolute_deviation) is a

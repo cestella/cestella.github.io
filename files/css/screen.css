@@ -65,7 +65,8 @@ hr {
 sup { line-height: 1ex; }
 
 #site {
-	max-width: 46em;
+  /* adjust this if you want to adjust site-wide width*/
+	max-width: 100%;
 	margin: 1.5em auto 3em auto;
 	line-height:1.5em;
 }

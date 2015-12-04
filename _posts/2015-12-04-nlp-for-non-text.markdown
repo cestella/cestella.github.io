@@ -116,11 +116,9 @@ Whenever we go to the doctor, a set of events happen:
 * Diagnoses are made
 * Drugs are prescribed
 
-These events happen in a certain _overall_ order but it varies based on the
+These events happen in a certain _overall_ order but the order varies based on the
 patient situation and according to the medical staff's best judgement.
-We will call this set of events a medical encounter and according to the
-medical staff's best judgement.  We will call this set of events a
-**medical encounter** and they happen every day all over the world.
+We will call this set of events a **medical encounter** and they happen every day all over the world.
 
 This sequence of events has a similar tone to what we're familiar with
 in natural language.  The encounter can be thought of as a sort of

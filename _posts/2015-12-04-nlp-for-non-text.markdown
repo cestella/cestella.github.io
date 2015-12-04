@@ -200,6 +200,8 @@ ask a couple of questions of the model:
 * Does the model show us anything that is novel and likely, but unknown
   at present? 
 
+One thing to note before we get started.  This model uses [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) as the score.  This measure of similarity ranges from 0 to 1, with 1 being most similar and 0 being least similar.
+
 Atherosclerosis
 ---
 

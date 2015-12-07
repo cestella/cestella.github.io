@@ -71,8 +71,7 @@ Word2Vec
 
 One common way to impose order on data that is used by engineers and
 mathematicians everywhere is to embed your data in a [vector space](https://en.wikipedia.org/wiki/Vector_space) with a
-[metric](https://en.wikipedia.org/wiki/Metric_space) on it.  This gives
-us a couple of things.  
+[metric](https://en.wikipedia.org/wiki/Metric_space) on it.    
 This gives us a couple things :
  
 * Data now has a distance which can be interpreted as the degree of

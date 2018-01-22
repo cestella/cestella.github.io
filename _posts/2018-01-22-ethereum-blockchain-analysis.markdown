@@ -56,7 +56,7 @@ multi-use chain.  You see a lot happening on this blockchain:
 * A proper cryptocurrency (named Ether)
 * Other cryptocurrencies (e.g.  [ERC-20](https://en.wikipedia.org/wiki/ERC20)) and [initial coin offerings](https://en.wikipedia.org/wiki/Initial_coin_offering)
 
-This seems like an ideal place to look for some analytics that might yield insights on how this chain works on a day-to-day basis.  And, most interestingly to investors, how changes in how usage might impact price.
+This seems like an ideal place to look for some analytics that might yield insights on how this chain works on a day-to-day basis.  And, most interestingly to investors, how changes in usage might impact price.
 
 The Tale of Two Users
 ---

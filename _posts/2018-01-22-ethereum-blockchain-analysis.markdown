@@ -86,7 +86,7 @@ We'll call the daily percentage of transactions involving a hash never before se
 
 Here we have the timerange between January 1st, 2017 until January 18, 2018 with the closing price per day plotted opposite the percentage of the daily transactions involving a hash never before seen (the daily new user impact).
 
-Note the discordant nature of the new user impact and how little correlation to price is happening prior to mid-November.  This is in stark contrast to the run-up in price and strong connection to the new user impact that happens from mid-November until early January.  The fascinating thing here is that the new user impact seems to dip prior to the price dip in early January.  It's unclear whether this is a reliable early indicator (especially given its chaos earlier in the year), but it's certainly worth investigating.  It is somewhat unfortunate how volatile the new user impact becomes from mid-december onward.
+Note the discordant nature of the new user impact and how little correlation to price is happening prior to mid-November.  This is in stark contrast to the run-up in price and strong connection to the new user impact that happens from mid-November until early January.  The fascinating thing here is that the new user impact seems to dip prior to the price dip in early January.  It's unclear whether this is a reliable early indicator (especially given its chaos earlier in the year), but it's certainly worth investigating.  It is somewhat unfortunate how volatile the new user impact becomes from mid-December onward.
 
 
 The Established Player Impact

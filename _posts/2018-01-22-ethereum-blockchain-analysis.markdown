@@ -14,8 +14,8 @@ I saw a commercial for Enterprise blockchains by Oracle during a football game t
 I'll just pause to let that sink in.  It is undeniable that this 
 little (slightly) esoteric corner distributed computing is fully riding
 the hype train right now.  It's no doubt that the runup in price by the
-core cryptocurrencies combined with pointed criticism from mainline
-economists and finance specialists are driving interest in the technology.  
+core cryptocurrencies combined with pointed skepticism from mainline
+economists and financial analysts are driving interest in the technology.  
 It's the perfect mixture of nerdiness, drama and money to pique the
 interests of even the most bloodless in the tech industry.
 

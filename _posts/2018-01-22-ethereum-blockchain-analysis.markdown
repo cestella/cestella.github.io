@@ -105,7 +105,7 @@ The thing I immediately notice here is that like the new user impact, the establ
 In Conclusion
 ---
 
-I hestitate to draw too many conclusions here vis-a-vie price as reading the tea leaves on these sorts of things is an exercise is frustration and dart-throwing.  That being said, I think the exercise of looking at the blockchain based on how it is used by these two very important actors can yield understanding of at least when inflection points are hit and usage patterns start to shift.  Furthermore, it is clear that these transactions start to dip in advance of actual closing day prices.
+I hestitate to draw too many conclusions here vis-à-vis price because reading the tea leaves on these sorts of things is an exercise is frustration and dart-throwing at the worst of times and a total dark art in the best of times.  That being said, I think the exercise of looking at the blockchain based on how it is used by these two very important actors can yield understanding of at least when inflection points are hit and usage patterns start to shift.  
 
 Thinking beyond this analysis, I plan to go on and look at some of the other graph theoretic analytics that we can track over time in both Ethereum as well as other established blockchains, most obviously Bitcoin:
 * The number of [transaction triangles](https://www.geeksforgeeks.org/number-of-triangles-in-a-undirected-graph/) per day to get an indication of the transaction movement in the chain

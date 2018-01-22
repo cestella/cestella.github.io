@@ -52,7 +52,7 @@ I like a couple aspects of this project:
 The thing that I like the most, however, is that it seems to be a
 multi-use chain.  You see a lot happening on this blockchain:
 
-* Cat breeding games 
+* [Cat breeding games](https://www.prnewswire.com/news-releases/cryptokitties-the-worlds-first-ethereum-game-launches-today-660494083.html)
 * A proper cryptocurrency (named Ether)
 * Other cryptocurrencies (e.g.  [ERC-20](https://en.wikipedia.org/wiki/ERC20)) and [initial coin offerings](https://en.wikipedia.org/wiki/Initial_coin_offering)
 

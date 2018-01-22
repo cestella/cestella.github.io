@@ -19,7 +19,7 @@ economists and finance specialists are driving interest in the technology.
 It's the perfect mixture of nerdiness, drama and money to pique the
 interests of even the most bloodless in the tech industry.
 
-I'm a [data scientist](https://www.linkedin.com/in/casey-stella-84b9a11) working in a very specific niche, a "Big Data" data scientist.  When blockchains came to my notice and the sheer transparency of them was damned near inescapably exciting.  Traditionally things like currencies operate like a black box, where we look at the inputs, the outputs and try our best to develop our best guesses of what's going on inside the black box.  Finally we can crack open the nut and get at the juicy details kept inside.
+I'm a [data scientist](https://www.linkedin.com/in/casey-stella-84b9a11) working in a very specific niche, a "Big Data" data scientist.  When blockchains came to my notice the sheer transparency of them was damned near inescapably exciting.  Traditionally things like currencies operate like a black box, where we look at the inputs, the outputs and try our best to develop our best guesses of what's going on inside the black box.  With blockchains, due to the fact that they are essentially immutable ledgers of transactions, we can crack open the nut and get at the juicy transaction details kept inside.
 
 Blockchains as they stand right now operate at relatively anemic
 transaction rates as compared to other financial transaction systems

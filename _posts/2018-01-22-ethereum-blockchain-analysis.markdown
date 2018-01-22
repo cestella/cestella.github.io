@@ -21,15 +21,7 @@ interests of even the most bloodless in the tech industry.
 
 I'm a [data scientist](https://www.linkedin.com/in/casey-stella-84b9a11) working in a very specific niche, a "Big Data" data scientist.  When blockchains came to my notice the sheer transparency of them was damned near inescapably exciting.  Traditionally things like currencies operate like a black box, where we look at the inputs, the outputs and try our best to develop our best guesses of what's going on inside the black box.  With blockchains, due to the fact that they are essentially immutable ledgers of transactions, we can crack open the nut and get at the juicy transaction details kept inside.
 
-Blockchains as they stand right now operate at relatively anemic
-transaction rates as compared to other financial transaction systems
-that we use in our daily lives (e.g. Visa).  Also, they've been around for a limited
-amount of time.  These things together put into question whether this
-truly is a "big data" problem or just a regular data problem.  I
-contend, and hopefully will show in a bit here, that nontrivial
-analysis of blockchains puts us in a "medium data, big compute"
-territory.  As such, this fits well within my preferred toolchain of
-[Apache Spark](http://spark.apache.org) and Python.
+Blockchains as they stand right now operate at relatively anemic transaction rates as compared to other financial transaction systems that we use in our daily lives (e.g. Visa).  Also, they've been around for a somewhat limited amount of time.  These things together put into question whether this truly is a "big data" problem or just a regular data problem.  I contend, and hopefully will show in a bit here, that nontrivial analysis of blockchains puts us in a "medium data, big compute" territory.  As such, this fits well within my preferred toolchain of [Apache Spark](http://spark.apache.org), Python and Jupyter.
 
 Ethereum: Putting the Virtual Machine on the Chain
 ---

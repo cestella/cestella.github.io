@@ -49,6 +49,15 @@ I like a couple aspects of this project:
 * It's moving away from a proof of work model, which results in huge energy consumption
 * Gathering transaction data from [geth](https://github.com/ethereum/go-ethereum/wiki/geth), the ethereum node, is do-able via a JSON-RPC interface they provide.
 
+The thing that I like the most, however, is that it seems to be a
+multi-use chain.  You see a lot happening on this blockchain:
+
+* Cat breeding games 
+* A proper cryptocurrency (named Ether)
+* Other cryptocurrencies (e.g.  [ERC-20](https://en.wikipedia.org/wiki/ERC20)) and [initial coin offerings](https://en.wikipedia.org/wiki/Initial_coin_offering)
+
+This seems like an ideal place to look for some analytics that might yield insights on how this chain works on a day-to-day basis.  And, most interestingly to investors, how changes in how usage might impact price.
+
 The Tale of Two Users
 ---
 

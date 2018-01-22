@@ -82,7 +82,7 @@ Here we have the timerange between January 1st, 2017 until January 18, 2018 with
 Note the discordant nature of the new user impact and how little correlation to price is happening prior to mid-November.  This is in stark contrast to the run-up in price and strong connection to the new user impact that happens from mid-November until early January.  The fascinating thing here is that the new user impact seems to dip prior to the price dip in early January.  It's unclear whether this is a reliable early indicator (especially given its chaos earlier in the year), but it's certainly worth investigating.  It is somewhat unfortunate how volatile the new user impact becomes from mid-december onward.
 
 
-The Established Player
+The Established Player Impact
 ---
 
 In contrast to the "new user" as an actor, whose definition is easy to pin down in a technical way, the established player is tougher to specify in a rigorous way.  Given the fact that the transactions on a blockchain form a graph, we can borrow from graph analytics some tooling to help us out.  Specifically, we will define an "established player" for a specific day to be a hash such that the [undirected pagerank](https://en.wikipedia.org/wiki/PageRank#PageRank_of_an_undirected_graph) of the hash is in the top 10% of pageranks given the transaction graph of the previous 14 days.  The intuition here is that this will define a set of "important" hashes in the network.  Tracking how much of the network operates from these important hashes daily will give us some idea of the impact of the big players, such as exchanges and market makers, in the network. 

@@ -61,9 +61,7 @@ This seems like an ideal place to look for some analytics that might yield insig
 The Tale of Two Users
 ---
 
-It's easy to say we should be looking at advanced analytics using the full data from the blockchain.  It's quite a different story to actually suggest *what* to look at here.  
-
-I will proceed from a couple of observations:
+It's easy to say we should be looking at advanced analytics using the full data from the blockchain.  It's quite a different story to actually suggest *what* to look at here.  I will proceed from a couple of observations:
 
 * Transaction data forms a graph, so we can borrow machinery from Graph Theory if necessary
 * There are at least two interesting actors in this scenario: the new user and the established player

@@ -31,7 +31,7 @@ analysis of blockchains puts us in a "medium data, big compute"
 territory.  As such, this fits well within my preferred toolchain of
 [Apache Spark](http://spark.apache.org) and Python.
 
-Ethereum
+Ethereum: Putting the Virtual Machine on the Chain
 ---
 
 The most attractive blockchain to analyze, for me, is Ethereum.  From [Wikipedia](https://en.wikipedia.org/wiki/Ethereum):
@@ -68,7 +68,7 @@ So, now we're left with a couple of challenges:
 
 Starting from the bottom, I think a sensible starting point here is to measure the daily percentage of transactions being done by each of these actors.  Plotting this opposite the price, we may see the effect that each of these actors may have on the price.
 
-New User Impact
+The New User Impact
 ---
 
 We'll call the daily percentage of transactions involving a hash never before seen to be the "new user impact." Just the act of picking out hashes that have never been seen before can be rather daunting given that there have been $20,321,934$ distinct hashes between ethereum's inception and January 18, 2018.  Doing this sort of analysis belies a simple SQL query but is well within Spark's sweet spot of enabling more low level operations and distributed computing primitives.  Judicious usage of bloom filters in Spark opens us up to performing these kinds of computations in a scalable way.

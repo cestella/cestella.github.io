@@ -100,7 +100,7 @@ In contrast to the "new user" as an actor, whose definition is easy to pin down 
 
 Here we have an abbreviated range of July 2017 until January 18th, 2018 mostly because it's fairly costly to compute the pagerank of even 2 weeks worth of transaction data (note that a more serious analysis would imply more serious compute and thus might adjust these parameters).
 
-The thing I immediately notice here is that like the new user impact, the established player impact seems to couple with the price starting in mid-November.  Also, similar to the new user impact, it deviates prior to the actual cost drop, but is decidedly less chaotic immediately prior to the mid-january dip and thus possibly more reliable.
+The thing I immediately notice here is that like the new user impact, the established player impact seems to couple with the price starting in mid-November.  Also, similar to the new user impact, it deviates prior to the actual cost drop, but is decidedly less chaotic immediately prior to the mid-January dip and thus possibly more reliable.
 
 In Conclusion
 ---

@@ -26,7 +26,7 @@ Blockchains as they stand right now operate at relatively anemic transaction rat
 Ethereum: A Virtual Machine on a Chain
 ---
 
-The most attractive blockchain to analyze in my opinion is Ethereum.  From [Wikipedia](https://en.wikipedia.org/wiki/Ethereum):
+The most attractive blockchain to analyze, in my opinion, is Ethereum.  From [Wikipedia](https://en.wikipedia.org/wiki/Ethereum):
 
 > Ethereum is an open-source, public, blockchain-based distributed computing platform featuring smart contract (scripting) 
 > functionality. Ether is a cryptocurrency whose blockchain is maintained by the Etherium platform, which provides a 
@@ -35,7 +35,7 @@ The most attractive blockchain to analyze in my opinion is Ethereum.  From [Wiki
 > Virtual Machine (EVM), which can execute scripts using an international network of public nodes. "Gas", an internal
 > transaction pricing mechanism, is used to mitigate spam and allocate resources on the network.
 
-I like a couple aspects of this project:
+I like a few aspects of this project:
 
 * It is well used every day and growing in popularity
 * It seems to have a broad vision; the blockchain as a platform for smart contracts is enticing
@@ -45,10 +45,10 @@ I like a couple aspects of this project:
 The thing that I like the most, however, is that it seems to be a multi-use chain.  You see a lot happening on this blockchain:
 
 * [Cat breeding games](https://www.prnewswire.com/news-releases/cryptokitties-the-worlds-first-ethereum-game-launches-today-660494083.html)
-* A proper cryptocurrency (named Ether)
+* A proper cryptocurrency (named [Ether](https://en.wikipedia.org/wiki/Ethereum))
 * Other cryptocurrencies (e.g.  [ERC-20](https://en.wikipedia.org/wiki/ERC20)) and [initial coin offerings](https://en.wikipedia.org/wiki/Initial_coin_offering)
 
-This seems like an ideal place to look for some analytics that might yield insights on how this chain works on a day-to-day basis.  And, most interestingly to investors, how changes in usage might impact price.
+For these reasons, Ethereum seems like the blockchain most ripe for analysis.  Specifically it would be interesting to find some analytics that might yield insights on how this chain works on a day-to-day basis.  While not necessarily tied to predicting price, it would be of particular interest to investors to find something which connects, even indirectly, to future price.
 
 The Tale of Two Users
 ---
@@ -58,9 +58,9 @@ It's easy to say one should be looking at advanced analytics using the full data
 * Transaction data forms a graph, so it is possible to borrow machinery from Graph Theory if necessary
 * There are at least two interesting actors in this scenario: the new user and the established player
 
-The "new user" is a user who is using the blockchain for the first time, whereas the "established player" is an hash which is important and somewhat central to the blockchain (e.g. involved in both sending and receiving transactions to many people).  I maintain that these are two interesting actors insomuch as observing the blockchain transactions from the vantage point of these users will yield insights as to the general health, well-being and state of the blockchain.  If either of these actors change their behavior appreciably, it's worth knowing and will probably have some impact on the fundamental usage patterns of the blockchain in question.  Maybe even, if we're very lucky, give us a hint on how the price may change.
+The "new user" is a user who is using the blockchain for the first time, whereas the "established player" is a hash which is important and somewhat central to the blockchain (e.g. involved in both sending and receiving transactions to many people).  I maintain that these are two interesting actors insomuch as observing the blockchain transactions from the vantage point of these users will yield insights as to the general health, well-being and state of the blockchain.  If either of these actors change their behavior appreciably, it's worth knowing and will probably have some impact on the fundamental usage patterns of the blockchain in question.  Maybe even, if we're very lucky, give us a hint on how the price may change.
 
-That leaves a couple of challenges:
+We now face a couple of challenges:
 
 * Formally defining these two actors in such a way that one can distinguish between them could be computationally daunting
 * What precisely should one measure through the lens of these actors?
@@ -76,9 +76,9 @@ Let's call the daily percentage of transactions involving a hash never before se
      style="width:1024px"
 />
 
-Observe the above plot from the timerange between January 1st, 2017 until January 18, 2018 with the closing price per day plotted opposite the percentage of the daily transactions involving a hash never before seen (the daily new user impact).
+Observe the above plot from the timerange between January 1st, 2017 until January 18, 2018 with the closing price per day in blue plotted opposite the percentage of the daily transactions involving a hash never before seen (the daily new user impact) in red.
 
-Note the discordant nature of the new user impact and how little correlation to price is happening prior to mid-November.  This is in stark contrast to the run-up in price and strong connection to the new user impact that happens from mid-November until early January.  The fascinating thing here is that the new user impact seems to dip prior to the price dip in early January.  It's unclear whether this is a reliable early indicator (especially given its chaos earlier in the year), but it's certainly worth investigating.  It is somewhat unfortunate how volatile the new user impact becomes from mid-December onward.
+Note the discordant nature of the new user impact and how little correlation to price is happening prior to mid-November.  The behavior prior to mid-November is in stark contrast to the run-up in price and strong connection to the new user impact that happens from mid-November until early January.  The fascinating thing here is that the new user impact seems to dip prior to the price dip in early January.  It's unclear whether this is a reliable early indicator (especially given its chaos earlier in the year), but it's certainly worth investigating.  It is somewhat unfortunate how volatile the new user impact becomes from mid-December onward.
 
 
 The Established Player Impact
@@ -90,22 +90,14 @@ In contrast to the "new user" as an actor, whose definition is easy to pin down 
      style="width:1024px"
 />
 
-Observe the above plot from an abbreviated timerange of July 2017 until January 18th, 2018 with the closing price per day plotted opposite the percentage of the daily transactions involving a hash from an established player. Note that this timerange is abbreviated because it's fairly costly to compute the pagerank of even 2 weeks worth of transaction data (note that a more serious analysis would imply more serious compute and thus might adjust these parameters).
+Observe the above plot from an abbreviated timerange of July 2017 until January 18th, 2018 with the closing price per day in blue plotted opposite the percentage of the daily transactions involving a hash from an established player in red. Note that this timerange is abbreviated because it's fairly costly to compute the pagerank of even 2 weeks worth of transaction data (note that a more serious analysis would imply more serious compute and thus might adjust these parameters).
 
-The thing I immediately notice here is that like the new user impact, the established player impact seems to couple with the price starting in mid-November.  Also, similar to the new user impact, it deviates prior to the actual cost drop, but is decidedly less chaotic immediately prior to the mid-January dip and thus possibly more reliable.
+The thing I immediately notice here is that, like the new user impact, the established player impact seems to couple with the price starting in mid-November.  Also, similar to the new user impact, it deviates prior to the actual cost drop, but is decidedly less chaotic immediately prior to the mid-January dip and thus possibly more reliable.
 
 In Conclusion
 ---
 
-I am reminded of one of my favorite lessons as a consulting data
-scientist: "Garbage In $\implies$ Garbage Out".  To put a finer point on
-it, it is imperative to monitor the makeup of your data as it changes 
-over time, because if you cannot trust your data, then you cannot 
-trust your conclusions. That is the core impulse behind this exercise, find some
-core analytic to summarize behavior of the network from a particular
-vantage point (or set of vantage points).
-
-Responsibility demands that I be silent on drawing solid conclusions of predictive leading indicators of price per se.  Rather, stepping back, there are the beginnings of a set of analytics which one can monitor over time to better understand how Ethereum, as a blockchain, moves, lives and breathes on a day-to-day basis.  Inflection points in these analytics tie to usage shifts and assumptions in the technical analysis of this blockchain should be reevaluated or else risk becoming stale or less-effective.  For instance, if one sees a precipitous drop in the new user impact over a week, then either users are not using the chain (which you can see in early 2017 in the "New User Impact" plot) or Ethereum has reached saturation (i.e. no new users, but still much usage).  For a young blockchain, new user usage is imperative for robust growth and thus it'll be a turning point when the chain is saturated.
+The core impulse behind this exercise is to find some essential analytics to summarize behavior of the network from a particular vantage point (or set of vantage points).  One must be careful drawing conclusions of predictive leading indicators of price from this exercise.  Rather, stepping back, there are the beginnings of a set of analytics that one can monitor over time to better understand how Ethereum, as a blockchain, moves, lives and breathes on a day-to-day basis.  Inflection points in these analytics tie to usage shifts and assumptions in the technical analysis of this blockchain should be reevaluated or else risk becoming stale or less-effective.  For instance, if one sees a precipitous drop in the new user impact over a week, then either users are not using the chain (which you can see in early 2017 in the "New User Impact" plot) or Ethereum has reached saturation (i.e. no new users, but still much usage).  For a young blockchain, new user usage is imperative for robust growth and thus it'll be a turning point when the chain is saturated.
 
 Thinking beyond this analysis, I plan to go on and look at some of the other graph theoretic analytics that can be tracked over time in both Ethereum as well as other established blockchains, most obviously Bitcoin:
 

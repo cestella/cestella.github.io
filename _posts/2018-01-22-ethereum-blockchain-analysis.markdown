@@ -105,19 +105,7 @@ trust your conclusions. That is the core impulse behind this exercise, find some
 core analytic to summarize behavior of the network from a particular
 vantage point (or set of vantage points).
 
-Responsibility demands that we be silent on drawing solid conclusions of 
-predictive leading indicators of price per se.  Rather, stepping 
-back, we now have the beginnings of a set of analytics which we can
-monitor over time to better understand how ethereum, as a blockchain, moves, lives and 
-breathes on a day-to-day basis.  Inflection points in these analytics
-tie to usage shifts and assumptions in the technical analysis of this
-blockchain should be reevaluated or else risk becoming stale or
-less-effective.  For instance, if we see a precipitous drop in the new
-user impact over a week, then either users are not using the chain
-(which you can see in early 2017 in the "New User Impact" plot) or
-ethereum has reached saturation (i.e. no new users, but still much usage).  
-For a young blockchain, new user usage is imperative for robust growth 
-and thus it'll be a turning point when the chain is saturated.
+Responsibility demands that we be silent on drawing solid conclusions of predictive leading indicators of price per se.  Rather, stepping back, we now have the beginnings of a set of analytics which we can monitor over time to better understand how ethereum, as a blockchain, moves, lives and breathes on a day-to-day basis.  Inflection points in these analytics tie to usage shifts and assumptions in the technical analysis of this blockchain should be reevaluated or else risk becoming stale or less-effective.  For instance, if we see a precipitous drop in the new user impact over a week, then either users are not using the chain (which you can see in early 2017 in the "New User Impact" plot) or ethereum has reached saturation (i.e. no new users, but still much usage).  For a young blockchain, new user usage is imperative for robust growth and thus it'll be a turning point when the chain is saturated.
 
 Thinking beyond this analysis, I plan to go on and look at some of the other graph theoretic analytics that we can track over time in both Ethereum as well as other established blockchains, most obviously Bitcoin:
 

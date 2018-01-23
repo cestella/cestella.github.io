@@ -23,7 +23,7 @@ I'm a [data scientist](https://www.linkedin.com/in/casey-stella-84b9a11) working
 
 Blockchains as they stand right now operate at relatively anemic transaction rates as compared to other financial transaction systems that one uses day-to-day (e.g. Visa).  Also, they've been around for a somewhat limited amount of time.  These two aspects together put into question whether this truly is a "big data" problem or just a regular data problem.  I contend, and hopefully will show in a bit here, that nontrivial analysis of blockchains puts us in a "medium data, big compute" territory.  As such, this fits well within my preferred toolchain of [Apache Spark](http://spark.apache.org), Python and Jupyter.
 
-Ethereum: Putting the Virtual Machine on the Chain
+Ethereum: A Virtual Machine on a Chain
 ---
 
 The most attractive blockchain to analyze in my opinion is Ethereum.  From [Wikipedia](https://en.wikipedia.org/wiki/Ethereum):

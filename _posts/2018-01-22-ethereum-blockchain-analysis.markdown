@@ -97,8 +97,29 @@ The thing I immediately notice here is that like the new user impact, the establ
 In Conclusion
 ---
 
-I hestitate to draw too many conclusions here vis-à-vis price because reading the tea leaves on these sorts of things is an exercise is frustration and dart-throwing at the worst of times and a total dark art in the best of times.  That being said, I think the exercise of looking at the blockchain based on how it is used by these two very important actors can yield understanding of at least when inflection points are hit and usage patterns start to shift.  
+I am reminded of one of my favorite lessons as a consulting data
+scientist: "Garbage In $\implies$ Garbage Out".  To put a finer point on
+it, it is imperative to monitor the makeup of your data as it changes 
+over time, because if you cannot trust your data, then you cannot 
+trust your conclusions. That is the core impulse behind this exercise, find some
+core analytic to summarize behavior of the network from a particular
+vantage point (or set of vantage points).
+
+Responsibility demands that we be silent on drawing solid conclusions of 
+predictive leading indicators of price per se.  Rather, stepping 
+back, we now have the beginnings of a set of analytics which we can
+monitor over time to better understand how ethereum, as a blockchain, moves, lives and 
+breathes on a day-to-day basis.  Inflection points in these analytics
+tie to usage shifts and assumptions in the technical analysis of this
+blockchain should be reevaluated or else risk becoming stale or
+less-effective.  For instance, if we see a precipitous drop in the new
+user impact over a week, then either users are not using the chain
+(which you can see in early 2017 in the "New User Impact" plot) or
+ethereum has reached saturation (i.e. no new users, but still much usage).  
+For a young blockchain, new user usage is imperative for robust growth 
+and thus it'll be a turning point when the chain is saturated.
 
 Thinking beyond this analysis, I plan to go on and look at some of the other graph theoretic analytics that we can track over time in both Ethereum as well as other established blockchains, most obviously Bitcoin:
+
 * The number of [transaction triangles](https://www.geeksforgeeks.org/number-of-triangles-in-a-undirected-graph/) per day to get an indication of the transaction movement in the chain
 * The number of "communities" in the transaction graph by applying a [label propagation algorithm](https://en.wikipedia.org/wiki/Label_Propagation_Algorithm) to the transaction graph daily.

@@ -35,7 +35,7 @@ The most attractive blockchain to analyze, in my opinion, is Ethereum.  From [Wi
 > Virtual Machine (EVM), which can execute scripts using an international network of public nodes. "Gas", an internal
 > transaction pricing mechanism, is used to mitigate spam and allocate resources on the network.
 
-I like a several aspects of this project:
+I like several aspects of this project:
 
 * It is well used every day and growing in popularity
 * It seems to have a broad vision; the blockchain as a platform for smart contracts is enticing
@@ -73,7 +73,7 @@ The New User Impact
 Let's call the daily percentage of transactions involving a hash never before seen to be the "new user impact." Just the act of picking out hashes that have never been seen before can be rather daunting given that there have been over 20 million distinct hashes between Ethereum's inception and January 18, 2018.  Doing this sort of analysis belies a simple SQL query but is well within Spark's sweet spot of enabling more low level operations and distributed computing primitives.  Judicious usage of bloom filters in Spark opens us up to performing these kinds of computations in a scalable way.
 
 <img src="files/ref_data/ethereum_analysis/new_hashes.png"
-     style="width:1024px"
+     style="width:100%"
 />
 
 Observe the above plot from the timerange between January 1, 2017 until January 18, 2018 with the closing price per day in blue plotted opposite the percentage of the daily transactions involving a hash never before seen (the daily new user impact) in red.
@@ -87,7 +87,7 @@ The Established Player Impact
 In contrast to the "new user" as an actor, whose definition is easy to pin down in a technical way, the established player is tougher to specify in a rigorous way.  Given the fact that the transactions on a blockchain form a graph, one can borrow from graph analytics some tooling to help us out.  Specifically, define an "established player" for a specific day to be a hash such that the [undirected pagerank](https://en.wikipedia.org/wiki/PageRank#PageRank_of_an_undirected_graph) of the hash is in the top 10% of pageranks given the transaction graph of the previous 14 days.  The intuition here is that this will define a set of "important" hashes in the network.  Tracking how much of the network operates from these important hashes daily will give us some idea of the impact of the big players, such as exchanges and market makers, in the network. 
 
 <img src="files/ref_data/ethereum_analysis/pagerank_plot.png"
-     style="width:1024px"
+     style="width:100%"
 />
 
 Observe the above plot from an abbreviated timerange of July 2017 until January 18, 2018 with the closing price per day in blue plotted opposite the percentage of the daily transactions involving a hash from an established player in red. Note that this timerange is abbreviated because it's fairly costly to compute the pagerank of even 2 weeks worth of transaction data (note that a more serious analysis would imply more serious compute and thus might adjust these parameters).

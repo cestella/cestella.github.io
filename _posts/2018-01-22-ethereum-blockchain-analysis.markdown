@@ -21,7 +21,7 @@ interests of even the most bloodless in the tech industry.
 
 I'm a [data scientist](https://www.linkedin.com/in/casey-stella-84b9a11) working in a very specific niche: dealing with "Big Data".  When blockchains came to my notice the sheer transparency of them was exceptionally exciting and liberating.  Traditionally things like currencies operate like a black box, where one looks at the inputs, the outputs and tries to develop sensible guesses as to what is going on inside the black box.  With blockchains, due to the fact that they are essentially immutable ledgers of transactions, one can crack open the nut and get at the juicy transaction details kept inside.
 
-Blockchains as they stand right now operate at relatively anemic transaction rates as compared to other financial transaction systems that one uses day-to-day (e.g. Visa).  Also, they've been around for a somewhat limited amount of time.  These two aspects together put into question whether this truly is a "big data" problem or just a regular data problem.  I contend, and hopefully will show in a bit here, that nontrivial analysis of blockchains puts us in a "medium data, big compute" territory.  As such, this fits well within my preferred toolchain of [Apache Spark](http://spark.apache.org), Python and Jupyter.
+Blockchains as they stand right now operate at relatively anemic transaction rates as compared to other financial transaction systems that one uses day-to-day (e.g. Visa).  Also, they've been around for a somewhat limited amount of time.  These two aspects together put into question whether this truly is a "big data" problem or just a regular data problem.  I contend, and hopefully will show in a bit here, that nontrivial analysis of blockchains puts us in a "medium data, big compute" territory.  As such, this fits well within my preferred data analysis tools of [Apache Spark](http://spark.apache.org), Python and Jupyter.
 
 Ethereum: A Virtual Machine on a Chain
 ---
@@ -35,7 +35,7 @@ The most attractive blockchain to analyze, in my opinion, is Ethereum.  From [Wi
 > Virtual Machine (EVM), which can execute scripts using an international network of public nodes. "Gas", an internal
 > transaction pricing mechanism, is used to mitigate spam and allocate resources on the network.
 
-I like a few aspects of this project:
+I like a several aspects of this project:
 
 * It is well used every day and growing in popularity
 * It seems to have a broad vision; the blockchain as a platform for smart contracts is enticing
@@ -70,7 +70,7 @@ Starting from the bottom, I think a sensible starting point here is to measure t
 The New User Impact
 ---
 
-Let's call the daily percentage of transactions involving a hash never before seen to be the "new user impact." Just the act of picking out hashes that have never been seen before can be rather daunting given that there have been $20,321,934$ distinct hashes between Ethereum's inception and January 18, 2018.  Doing this sort of analysis belies a simple SQL query but is well within Spark's sweet spot of enabling more low level operations and distributed computing primitives.  Judicious usage of bloom filters in Spark opens us up to performing these kinds of computations in a scalable way.
+Let's call the daily percentage of transactions involving a hash never before seen to be the "new user impact." Just the act of picking out hashes that have never been seen before can be rather daunting given that there have been over 20 million distinct hashes between Ethereum's inception and January 18, 2018.  Doing this sort of analysis belies a simple SQL query but is well within Spark's sweet spot of enabling more low level operations and distributed computing primitives.  Judicious usage of bloom filters in Spark opens us up to performing these kinds of computations in a scalable way.
 
 <img src="files/ref_data/ethereum_analysis/new_hashes.png"
      style="width:1024px"

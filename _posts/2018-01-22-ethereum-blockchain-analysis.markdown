@@ -10,14 +10,7 @@ layout: blog-post
 Blockchains are Big Data
 ---
 
-I saw a commercial for Enterprise blockchains by Oracle during a football game this weekend.
-I'll just pause to let that sink in.  It is undeniable that this 
-little (slightly) esoteric corner distributed computing is fully riding
-the hype train right now.  It's no doubt that the runup in price by the
-core cryptocurrencies combined with pointed skepticism from mainline
-economists and financial analysts are driving interest in the technology.  
-It's the perfect mixture of nerdiness, drama and money to pique the
-interests of even the most bloodless in the tech industry.
+I saw a commercial for Enterprise blockchains by Oracle during a football game this weekend.  I'll just pause to let that sink in.  It is undeniable that this little (slightly) esoteric corner distributed computing is fully riding the hype train right now.  It's no doubt that the runup in price by the core cryptocurrencies combined with pointed skepticism from mainline economists and financial analysts are driving interest in the technology.  It's the perfect mixture of nerdiness, drama and money to pique the interests of even the most bloodless in the tech industry.
 
 I'm a [data scientist](https://www.linkedin.com/in/casey-stella-84b9a11) working in a very specific niche: dealing with "Big Data".  When blockchains came to my notice the sheer transparency of them was exceptionally exciting and liberating.  Traditionally things like currencies operate like a black box, where one looks at the inputs, the outputs and tries to develop sensible guesses as to what is going on inside the black box.  With blockchains, due to the fact that they are essentially immutable ledgers of transactions, one can crack open the nut and get at the juicy transaction details kept inside.
 

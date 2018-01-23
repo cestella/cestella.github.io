@@ -76,7 +76,7 @@ Let's call the daily percentage of transactions involving a hash never before se
      style="width:1024px"
 />
 
-Observe the above plot from the timerange between January 1st, 2017 until January 18, 2018 with the closing price per day in blue plotted opposite the percentage of the daily transactions involving a hash never before seen (the daily new user impact) in red.
+Observe the above plot from the timerange between January 1, 2017 until January 18, 2018 with the closing price per day in blue plotted opposite the percentage of the daily transactions involving a hash never before seen (the daily new user impact) in red.
 
 Note the discordant nature of the new user impact and how little correlation to price is happening prior to mid-November.  The behavior prior to mid-November is in stark contrast to the run-up in price and strong connection to the new user impact that happens from mid-November until early January.  The fascinating thing here is that the new user impact seems to dip prior to the price dip in early January.  It's unclear whether this is a reliable early indicator (especially given its chaos earlier in the year), but it's certainly worth investigating.  It is somewhat unfortunate how volatile the new user impact becomes from mid-December onward.
 
@@ -90,7 +90,7 @@ In contrast to the "new user" as an actor, whose definition is easy to pin down 
      style="width:1024px"
 />
 
-Observe the above plot from an abbreviated timerange of July 2017 until January 18th, 2018 with the closing price per day in blue plotted opposite the percentage of the daily transactions involving a hash from an established player in red. Note that this timerange is abbreviated because it's fairly costly to compute the pagerank of even 2 weeks worth of transaction data (note that a more serious analysis would imply more serious compute and thus might adjust these parameters).
+Observe the above plot from an abbreviated timerange of July 2017 until January 18, 2018 with the closing price per day in blue plotted opposite the percentage of the daily transactions involving a hash from an established player in red. Note that this timerange is abbreviated because it's fairly costly to compute the pagerank of even 2 weeks worth of transaction data (note that a more serious analysis would imply more serious compute and thus might adjust these parameters).
 
 The thing I immediately notice here is that, like the new user impact, the established player impact seems to couple with the price starting in mid-November.  Also, similar to the new user impact, it deviates prior to the actual cost drop, but is decidedly less chaotic immediately prior to the mid-January dip and thus possibly more reliable.
 

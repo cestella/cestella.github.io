@@ -113,5 +113,6 @@ Thinking beyond this analysis, I plan to go on and look at some of the other gra
 * The number of "communities" in the transaction graph by applying a [label propagation algorithm](https://en.wikipedia.org/wiki/Label_Propagation_Algorithm) to the transaction graph daily.
 
 Also, looking closer at analytics involving the amount of ethereum transacted per day:
+
 * 50th, 75th, 90th and 95th percentile of the amount of ether transacted by new users 
 * 50th, 75th, 90th and 95th percentile of the amount of ether transacted by established players 
